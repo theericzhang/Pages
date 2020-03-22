@@ -48,3 +48,8 @@ button:hover{
 	background-color: #2E1263;
 	color: #E8E8E8;
 }
+
+::selection {
+  background: #2E1263; /* WebKit/Blink Browsers */
+  color: #E8E8E8;
+}
