@@ -41,17 +41,10 @@ button{
 	letter-spacing: 4px;
 	outline: none;
 	font-family: 'Josefin Sans', 'sans-serif';
-	transition: background-color 0.3s;
-	/*transition: color 0.3s;*/
+	transition: background-color 0.3s, color 0.3s;
 }
 
 button:hover{
-	/*transition: 0.3s;*/
 	background-color: #2E1263;
 	color: #E8E8E8;
 }
-
-/*button:unhover{
-	transition
-}
-*/
