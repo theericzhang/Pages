@@ -2,6 +2,7 @@
 h1{
 	/*text-transform: uppercase;*/
 	/*border-top: 8px solid;*/
+	text-rendering: optimizeLegibility;
 	font-size: 70px;
 }
 
