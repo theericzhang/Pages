@@ -1,10 +1,7 @@
-/*Write your CSS in here*/
-/*@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);*/
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 h1{
-	text-transform: uppercase;
-	border-top: 8px solid;
+	/*text-transform: uppercase;*/
+	/*border-top: 8px solid;*/
 	font-size: 70px;
 }
 
@@ -17,7 +14,7 @@ body{
 
 img{
 	height: 500px;
-	border-radius: 50%;
+	border-radius: 20px;
 }
 
 #container{
@@ -30,18 +27,19 @@ img{
 
 button{
 	margin: 30px auto 0;
-	padding: 20px 25px;
+	padding: 15px 25px;
 	background-color: #E8E8E8;
 	color: #2E1263;
-	font-size: 14px;
+	font-size: 25px;
 	text-align: center;
-	border: 1px solid #2E1263;
-	text-transform: uppercase;
+	border: 2px solid #2E1263;
+	border-radius: 8px;
+	/*text-transform: uppercase;*/
 	text-decoration: none;
-	letter-spacing: 4px;
+	letter-spacing: 1px;
 	outline: none;
 	font-family: 'Josefin Sans', 'sans-serif';
-	transition: background-color 0.3s, color 0.3s;
+	transition: background-color 0.2s, color 0.2s;
 }
 
 button:hover{
