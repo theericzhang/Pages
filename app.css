@@ -11,7 +11,7 @@ h1{
 body{
 	background-color: #E8E8E8; 
 	color: #4137cd;
-	font-family: 'Josefin Sans', 'sans-serif';
+	font-family: 'Helvetica Neue';
 	font-weight: 200;
 }
 
@@ -41,13 +41,17 @@ button{
 	text-decoration: none;
 	letter-spacing: 1px;
 	outline: none;
-	font-family: 'Josefin Sans', 'sans-serif';
+	font-family: 'Helvetica Neue';
 	transition: background-color 0.2s, color 0.2s;
 }
 
 button:hover{
 	background-color: #4137cd;
 	color: #E8E8E8;
+}
+
+p{
+	padding: 15px 25px;
 }
 
 ::selection {
