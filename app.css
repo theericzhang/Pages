@@ -16,8 +16,10 @@ body{
 }
 
 img{
-	height: 500px;
+	width: 350px;
+
 	border-radius: 20px;
+	/*margin: 20px auto 0;*/
 }
 
 #container{
@@ -52,6 +54,8 @@ button:hover{
 
 p{
 	padding: 15px 25px;
+	font-family: 'Josefin Sans';
+	font-weight: 200;
 }
 
 ::selection {
