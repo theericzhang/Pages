@@ -44,15 +44,31 @@ h1{
 	border-bottom: 8px solid;
 	text-rendering: optimizeLegibility;
 	/*letter-spacing: -2px;*/
+	font-family: 'Helvetica Neue';
 	font-size: 70px;
 	font-weight: 500;
+	line-height: 120%;
 }
 
-body{
-	background-color: #E8E8E8; 
-	color: #4137cd;
-	font-family: 'Helvetica Neue';
-	font-weight: 200;
+@media (max-width: 800px) and (min-width: 240px){
+	body{
+		background-color: #E8E8E8; 
+		color: #4137cd;
+		padding: 15px 10px;
+	/*	font-family: 'Helvetica Neue';
+		font-weight: 200;*/
+	}
+}
+
+@media (min-width: 801px){
+	body{
+		background-color: #E8E8E8; 
+		color: #4137cd;	
+	}
+
+	/*p{
+		max-width: 600px;
+	}*/
 }
 
 img{
@@ -93,9 +109,12 @@ button:hover{
 }
 
 p{
-	padding: 15px 25px;
+	/*padding: 15px 10px;*/
+	max-width: 600px;
 	font-family: 'brandon_grotesqueregular';
+	font-size: 22px;
 	font-weight: normal;
+	line-height: 120%;
 }
 
 ::selection {
