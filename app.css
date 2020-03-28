@@ -1,7 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap');
+
+@font-face {
+    font-family: 'brandon_grotesqueMdIt';
+    src: url('fonts/brandon_med_it-webfont.woff2') format('woff2'),
+         url('fonts/brandon_med_it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'brandon_grotesquemedium';
+    src: url('fonts/brandon_med-webfont.woff2') format('woff2'),
+         url('fonts/brandon_med-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'brandon_grotesqueRgIt';
+    src: url('fonts/brandon_reg_it-webfont.woff2') format('woff2'),
+         url('fonts/brandon_reg_it-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'brandon_grotesqueregular';
+    src: url('fonts/brandon_reg-webfont.woff2') format('woff2'),
+         url('fonts/brandon_reg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 h1{
 	/*text-transform: uppercase;*/
-	/*border-top: 8px solid;*/
+	border-top: 8px solid;
+	border-bottom: 8px solid;
 	text-rendering: optimizeLegibility;
 	/*letter-spacing: -2px;*/
 	font-size: 70px;
@@ -54,8 +94,8 @@ button:hover{
 
 p{
 	padding: 15px 25px;
-	font-family: 'Josefin Sans';
-	font-weight: 200;
+	font-family: 'brandon_grotesqueregular';
+	font-weight: normal;
 }
 
 ::selection {
