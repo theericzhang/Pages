@@ -10,36 +10,40 @@
 	width: 60px;
 	height: 40px;
 	cursor: pointer;
-	transition: all .5s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 .menu-btn__burger{
-	width:50px;
-	height: 6px;
+	width:40px;
+	height: 3px;
 	background: #000;
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(255,101,47,.2);
-	transition: all .5s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.menu-btn__burger:focus{
+	outline: none;
 }
 
 .menu-btn__burger::before,
 .menu-btn__burger::after{
 	content: '';
 	position: absolute;
-	width: 50px;
-	height: 6px;
+	width: 40px;
+	height: 3px;
 	background: #000;
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(255,101,47,.2);
-	transition: all ..5s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
 .menu-btn__burger::before{
-	transform: translateY(-16px);
+	transform: translateY(-12px);
 }
 
 .menu-btn__burger::after{
-	transform: translateY(16px);
+	transform: translateY(12px);
 }
 
 .menu-btn.open .menu-btn__burger {
