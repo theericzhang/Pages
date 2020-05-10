@@ -10,7 +10,7 @@
 	width: 50px;
 	height: 50px;
 	cursor: pointer;
-	transition: all .15s ease-in-out;
+	transition: all .35s ease-in-out;
 }
 
 .menu-btn__burger{
@@ -19,7 +19,7 @@
 	background: #000;
 	border-radius: 5px;
 	box-shadow: none;
-	transition: all .15s ease-in-out;
+	transition: all .35s ease-in-out;
 }
 
 .menu-btn__burger:focus,
@@ -33,15 +33,17 @@
 	background: #000;
 	border-radius: 5px;
 	box-shadow: none;
-	transition: all .15s ease-in-out;
+	transition: all .35s ease-in-out;
 }
 
 .menu-btn__burger::before{
 	transform: translateY(-10px);
+	z-index: 0;
 }
 
 .menu-btn__burger::after{
 	transform: translateY(10px);
+	z-index: 1;
 }
 
 .menu-btn.open .menu-btn__burger {
@@ -52,11 +54,55 @@
 
 .menu-btn.open .menu-btn__burger::before{
 	transform: rotate(45deg) translate(35px, -35px);
+	z-index: 0;
+	background: #fff;
 }
 
 .menu-btn.open .menu-btn__burger::after{
 	transform: rotate(-45deg) translate(35px, 35px);
+	z-index: 1;
+	background: #fff;
 }
+
+.overlay{
+	height: 0%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.9);
+	overflow-x: hidden;
+	transition: 0.35s;
+}
+
+/*watch this section to move items to the right*/
+.overlay-content{
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.overlay a{
+	font-family: 'Helvetica Neue';
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus{
+	color: #f1f1f1;
+}
+
+/*.overlay .closebtn{
+
+}*/
 
 /* Create a sticky/fixed navbar */
 /* Add a black background color to the top navigation */

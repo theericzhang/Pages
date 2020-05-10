@@ -10,15 +10,27 @@
 
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 	
-		<div class ="overlayContent">
-			<div class="menu-btn" onclick="myFunction()">
+		<div id="myNav" class="overlay">
+
+		  <!-- Button to close the overlay navigation -->
+		  <div class="menu-btn" onclick="openNav()">
 		  		<div class="menu-btn__burger"></div>
 		  	</div>	
-			<a href="#deez">deez</a>
-			<a href="#nuttss">nuttts</a>
-			<a href="#dose">dose</a>
-			<a href="#notzzz">nattos</a>
+
+		  <!-- Overlay content -->
+		  <div class="overlay-content">
+		    <a href="#">About</a>
+		    <a href="#">Services</a>
+		    <a href="#">Clients</a>
+		    <a href="#">Contact</a>
+		  </div>
+
 		</div>
+
+		<!-- Use any element to open/show the overlay navigation menu -->
+		<span onclick="openNav()">open</span>
+
+
 
 
 	<!-- <div class="topnav" id="myTopnav">
