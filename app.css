@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap');
 
 .menu-btn {
-	padding: 0px 16px;
+	padding: 0px 10px;
 	right: 0;
 	position: fixed;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 50px;
-	height: 40px;
+	height: 50px;
 	cursor: pointer;
-	transition: all .2s ease-in-out;
+	transition: all .15s ease-in-out;
 }
 
 .menu-btn__burger{
@@ -19,7 +19,7 @@
 	background: #000;
 	border-radius: 5px;
 	box-shadow: none;
-	transition: all .2s ease-in-out;
+	transition: all .15s ease-in-out;
 }
 
 .menu-btn__burger:focus,
@@ -33,7 +33,7 @@
 	background: #000;
 	border-radius: 5px;
 	box-shadow: none;
-	transition: all .2s ease-in-out;
+	transition: all .15s ease-in-out;
 }
 
 .menu-btn__burger::before{
@@ -63,6 +63,11 @@
 .topnav {
   background-color: #FFFFFF;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 /* Style the links inside the navigation bar */
@@ -114,7 +119,7 @@
 		font-weight: 200;*/
 	}
 
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {position: fixed;}
   .topnav.responsive a.icon {
     position: relative;
     right: 0;
@@ -212,6 +217,7 @@ img{
 	align-items: center;
 	justify-content: flex-start;
 	height: 100vh;
+	padding-top: 14px;
 }
 
 button{
