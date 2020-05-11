@@ -8,6 +8,7 @@ menuBtn.addEventListener('click', () => {
 	}else{
 		menuBtn.classList.remove('open');
     document.getElementById("myNav").style.height = "0%";
+    // menuBtn.classList.
 		menuOpen = false;
 	}
 })
