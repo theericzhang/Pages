@@ -4,14 +4,34 @@ menuBtn.addEventListener('click', () => {
 	if(!menuOpen){
 		menuBtn.classList.add('open');
     document.getElementById("myNav").style.height = "100%";
+    document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,0.9)"
+    document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,0.9)"
 		menuOpen = true;
 	}else{
 		menuBtn.classList.remove('open');
     document.getElementById("myNav").style.height = "0%";
+    document.getElementById("myNav").style.backgroundColor = "#6a8da9"
+    document.getElementById("navbar").style.backgroundColor = "#6a8da9"
     // menuBtn.classList.
 		menuOpen = false;
 	}
 })
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollpos = window.pageYOffset;
+  if(prevScrollpos > currentScrollpos){
+    document.getElementById("navbar").style.top = "0";
+  }else if(prevScrollpos === 0){
+    document.getElementById("navbar").style.top = "0";
+  }
+
+  else{
+    document.getElementById("navbar").style.top = "-50px";
+  }
+
+  prevScrollpos = currentScrollpos;
+}
 
 function openNav() {
   // alert("bruh");

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap');
 
 .menu-btn {
-	padding: 0px 10px;
+	padding: 0px 5px;
 	right: 0;
 	position: fixed;
 	display: flex;
@@ -10,7 +10,7 @@
 	width: 50px;
 	height: 50px;
 	cursor: pointer;
-	transition: all .35s ease-in-out;
+	transition: all .30s ease-in-out;
 	z-index: 1;
 }
 
@@ -20,7 +20,7 @@
 	background: #000;
 	border-radius: 5px;
 	box-shadow: none;
-	transition: all .35s ease-in-out;
+	transition: all .30s ease-in-out;
 	z-index: 1;
 	position: absolute;
 }
@@ -36,7 +36,7 @@
 	background: #000;
 	border-radius: 5px;
 	box-shadow: none;
-	transition: all .35s ease-in-out;
+	transition: all .30s ease-in-out;
 	z-index: 1;
 }
 
@@ -80,10 +80,11 @@
 	z-index: 0;
 	left: 0;
 	top: 0;
-	background-color: rgb(0,0,0);
-	background-color: rgba(0,0,0,0.9);
+	/*background-color: rgb(0,0,0);*/
+	/*background-color: rgba(0,0,0,0.9);*/
+	background-color: #6a8da9;
 	overflow-x: hidden;
-	transition: 0.35s;
+	transition: 0.3s;
 }
 
 [aria-hidden = "true"] {display: none;}
@@ -158,6 +159,29 @@
   display: none;
 }
 
+#navbar{
+	background-color: #6a8da9;
+	transition: 0.3s;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	/*transition: top 0.3s;*/
+	z-index: 1;
+	padding: 0;
+	margin: 0;
+
+}
+
+#navbar a{
+	float: left;
+  	display: block;
+  	color: #f2f2f2;
+  	text-align: left;
+  	padding: 15px;
+  	text-decoration: none;
+  	font-size: 17px;
+}
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
@@ -173,7 +197,8 @@
 	body{
 		background-color: #FFFFFF; 
 		color: #000000;
-		padding: 15px 10px;
+		margin: 0px;
+		/*padding: 15px 10px;*/
 	/*	font-family: 'Helvetica Neue';
 		font-weight: 200;*/
 	}
@@ -255,7 +280,7 @@ h1{
 	body{
 		background-color: #FFFFFF; 
 		color: #000000;	
-		padding: 15px 10px;
+		margin: 0px;
 	}
 
 	/*p{
@@ -277,6 +302,7 @@ img{
 	justify-content: flex-start;
 	height: 100vh;
 	padding-top: 14px;
+	padding: 15px 10px;
 }
 
 button{
