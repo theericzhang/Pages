@@ -7,6 +7,8 @@ menuBtn.addEventListener('click', () => {
     document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,0.9)"
     document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,0.9)"
     document.getElementById("ericZ").style.color = "#fff";
+    document.documentElement.style.overflow = 'hidden';
+    document.body.scroll = "no";
 		menuOpen = true;
 	}else{
 		menuBtn.classList.remove('open');
@@ -14,7 +16,8 @@ menuBtn.addEventListener('click', () => {
     document.getElementById("myNav").style.backgroundColor = "#FFF"
     document.getElementById("navbar").style.backgroundColor = "#FFF"
     document.getElementById("ericZ").style.color = "#000";
-
+    document.documentElement.style.overflow = 'scroll';
+    document.body.scroll = "yes";
 
     // menuBtn.classList.
 		menuOpen = false;
