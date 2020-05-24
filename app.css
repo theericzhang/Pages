@@ -8,7 +8,7 @@
 	justify-content: center;
 	align-items: center;
 	width: 50px;
-	height: 50px;
+	height: 82px;
 	cursor: pointer;
 	transition: all .30s ease-in-out;
 	z-index: 1;
@@ -82,7 +82,7 @@
 	top: 0;
 	/*background-color: rgb(0,0,0);*/
 	/*background-color: rgba(0,0,0,0.9);*/
-	background-color: #6a8da9;
+	background-color: #FFF;
 	overflow-x: hidden;
 	transition: 0.3s;
 }
@@ -94,17 +94,18 @@
 /*watch this section to move items to the right*/
 .overlay-content{
 	position: relative;
-	top: 25%;
+	top: 5%;
 	width: 100%;
-	text-align: center;
-	margin-top: 30px;
+	text-align: left;
+	margin-top: 55px;
+	margin-left: 20px;
 }
 
 .overlay a{
 	font-family: 'Helvetica Neue';
-	padding: 8px;
+	padding: 10px;
 	text-decoration: none;
-	font-size: 36px;
+	font-size: 20px;
 	color: #818181;
 	display: block;
 	transition: 0.3s;
@@ -112,6 +113,12 @@
 
 .overlay a:hover, .overlay a:focus{
 	color: #f1f1f1;
+}
+
+hr.solid {
+  border-top: 2px solid #fff;
+  margin-top: -5px;
+  margin-left: 0px;
 }
 
 /*.overlay .closebtn{
@@ -160,7 +167,7 @@
 }
 
 #navbar{
-	background-color: #6a8da9;
+	background-color: #FFF;
 	transition: 0.3s;
 	position: fixed;
 	top: 0;
@@ -175,11 +182,16 @@
 #navbar a{
 	float: left;
   	display: block;
-  	color: #f2f2f2;
+  	color: #000;
   	text-align: left;
-  	padding: 15px;
+  	padding: 10px 15px;
   	text-decoration: none;
-  	font-size: 17px;
+  	font-size: 60px;
+  	font-family: fit,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	transition: 0.3s;
+	/*letter-spacing: 1px;*/
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -302,7 +314,7 @@ img{
 	justify-content: flex-start;
 	height: 100vh;
 	padding-top: 14px;
-	padding: 15px 10px;
+	padding: 60px 10px;
 }
 
 button{

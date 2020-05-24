@@ -6,28 +6,35 @@ menuBtn.addEventListener('click', () => {
     document.getElementById("myNav").style.height = "100%";
     document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,0.9)"
     document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,0.9)"
+    document.getElementById("ericZ").style.color = "#fff";
 		menuOpen = true;
 	}else{
 		menuBtn.classList.remove('open');
     document.getElementById("myNav").style.height = "0%";
-    document.getElementById("myNav").style.backgroundColor = "#6a8da9"
-    document.getElementById("navbar").style.backgroundColor = "#6a8da9"
+    document.getElementById("myNav").style.backgroundColor = "#FFF"
+    document.getElementById("navbar").style.backgroundColor = "#FFF"
+    document.getElementById("ericZ").style.color = "#000";
+
+
     // menuBtn.classList.
 		menuOpen = false;
 	}
 })
 
 var prevScrollpos = window.pageYOffset;
+
+// alert(prevScrollpos);
 window.onscroll = function() {
   var currentScrollpos = window.pageYOffset;
+
   if(prevScrollpos > currentScrollpos){
     document.getElementById("navbar").style.top = "0";
-  }else if(prevScrollpos === 0){
+  }else if(prevScrollpos <= 0){
     document.getElementById("navbar").style.top = "0";
   }
 
   else{
-    document.getElementById("navbar").style.top = "-50px";
+    document.getElementById("navbar").style.top = "-82px";
   }
 
   prevScrollpos = currentScrollpos;
