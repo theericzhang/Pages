@@ -5,15 +5,31 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Eric Zhang</title>
+	<!-- stylesheets -->
 	<link rel="stylesheet" type="text/css" href="app.css">
+	<!-- typefaces -->
 	<link rel="stylesheet" href="https://use.typekit.net/ekl6qyr.css">
-
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
 
 </head>
 <body>
 
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+			<!-- <div class=""></div> -->
+					<!-- Slider main container -->
+			<div class="swiper-container">
+			<!-- Additional required wrapper -->
+			    <div class="swiper-wrapper">
+			        <!-- Slides -->
+			        <div class="swiper-slide">
+			        	<img src="https://scontent-sjc3-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/84664443_1069992023336913_4550990068249504488_n.jpg?_nc_ht=scontent-sjc3-1.cdninstagram.com&_nc_cat=109&_nc_ohc=3bhl7Yl0q7EAX_1yW3Y&oh=5233a5f18945f66b081becd37ab9152b&oe=5EF5C6A3" alt="Yosemite" width="414" height="517.5"></div>
+			        <div class="swiper-slide">
+			        	<!-- <img src="https://scontent-sjc3-1.cdninstagram.com/v/t51.2885-15/e35/40315516_2057970254253137_1821342080857800704_n.jpg?_nc_ht=scontent-sjc3-1.cdninstagram.com&_nc_cat=105&_nc_ohc=FyJW9QjBTn0AX-UqHkg&se=7&oh=2712e063f44b754147c13cfe458c4f32&oe=5EF79A01" alt="SaltLake" width="540" height="675"> -->
+			        	Thing Goes Here
+			        	</div>
+			        <div class="swiper-slide">Another Thing Goes Here</div>
+			    </div>
+			</div>
 	
 		<div id ="navbar">
 			<a id = "ericZ" href="#home">Eric Zhang</a>
@@ -24,49 +40,30 @@
 
 		</div>
 
+
+
 		<div id="myNav" class="overlay">
-
-		  <!-- Button to close the overlay navigation -->
-		  
-
 
 		  <!-- Overlay content -->
 		  <div class="overlay-content">
-		    <a href="#">About</a>
-		    <!-- <hr class="solid"> -->
-		    <a href="#">Services</a>
-		    <!-- <hr class="solid"> -->
-		    <a href="#">Clients</a>
-		    <!-- <hr class="solid"> -->
-		    <a href="#">Contact</a>
-		    <!-- <hr class="solid"> -->
+		    <a href="#">ABOUT ME</a>
+		    <hr class="solid">
+		    <a href="#">PORTFOLIO</a>
+		    <hr class="solid">
+		    <a href="#">CLIENTS</a>
+		    <hr class="solid">
+		    <a href="#">CONTACT</a>
+		    <hr class="solid">
 		  </div>
 
 		</div>
 
-		<!-- Use any element to open/show the overlay navigation menu -->
-		<!-- <span onclick="openNav()">open</span> -->
 
 
 
-
-	<!-- <div class="topnav" id="myTopnav">
-		<div class="menu-btn" onclick="myFunction()">
-	  		<div class="menu-btn__burger"></div>
-	  	</div>	
-		  <a href="#home">Home</a>
-		  <a href="#news">News</a>
-		  <a href="#contact">Contact</a>
-		  <a href="#about">About</a>		
-	</div> -->
 
 	<section id="container">
-		<!-- <h1>Eric &nbsp;&nbsp;&nbsp;</br>
-		&nbsp;&nbsp;&nbsp;Zhang
-		</h1> -->
-
-		<!-- <img src="imgs/EZ.jpeg"> -->
-
+		
 		<div>
 		<button onclick="window.location.href = 'mailto:anericzhang@gmail.com';">Contact me →</button>
 		</div>
@@ -77,7 +74,19 @@
 		
 	</section>
 
+
+
 	<script type="text/javascript" src="app.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" integrity="sha256-ABrLsV2caVEMCBfm3eNhv/CYQG+tGCqzw2f4b/Pag0M=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+	<!-- Used for creating a carousel for the front page -->
+
+<script>
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,   
+  })
+  </script>
 </body>
 </html>

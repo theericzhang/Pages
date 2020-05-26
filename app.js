@@ -4,8 +4,8 @@ menuBtn.addEventListener('click', () => {
 	if(!menuOpen){
 		menuBtn.classList.add('open');
     document.getElementById("myNav").style.height = "100%";
-    document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,0.9)"
-    document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,0.9)"
+    document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)"
+    document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)"
     document.getElementById("ericZ").style.color = "#fff";
     document.documentElement.style.overflow = 'hidden';
     document.body.scroll = "no";
@@ -32,7 +32,7 @@ window.onscroll = function() {
 
   if(prevScrollpos > currentScrollpos){
     document.getElementById("navbar").style.top = "0";
-  }else if(prevScrollpos <= 0){
+  }else if(prevScrollpos <= 82){
     document.getElementById("navbar").style.top = "0";
   }
 
@@ -42,6 +42,32 @@ window.onscroll = function() {
 
   prevScrollpos = currentScrollpos;
 }
+
+// var mySwiper = new Swiper ('.swiper-container', {
+//       // Optional parameters
+//       direction: 'vertical',
+//       loop: true,
+
+//       // If we need pagination
+//       pagination: {
+//         el: '.swiper-pagination',
+//       },
+
+//       // Navigation arrows
+//       navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//       },
+
+//       // And if we need scrollbar
+//       scrollbar: {
+//         el: '.swiper-scrollbar',
+//       },
+//     })
+
+
+
+
 
 function openNav() {
   // alert("bruh");
