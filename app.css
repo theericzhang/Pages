@@ -60,7 +60,7 @@
 
 .transition-fade{
 	opacity: 1;
-	transition: 500ms;
+	transition: 1000ms;
 }
 
 #notNav{
