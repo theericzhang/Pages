@@ -1,3 +1,6 @@
+//menu button triggers
+//open overlays if changed, close overlay if reverted
+
 const menuBtn = document.querySelector('.menu-btn');
 const subNav = document.querySelector('.overlay a');
 
@@ -13,6 +16,7 @@ menuBtn.addEventListener('click', () => {
 	}
 })
 
+//changing class properties
 function closeOverlay(){
     menuBtn.classList.remove('open');
     document.getElementById("myNav").style.height = "0%";
@@ -37,7 +41,6 @@ function openOverlay(){
 
 var prevScrollpos = window.pageYOffset;
 
-// alert(prevScrollpos);
 window.onscroll = function() {
   var currentScrollpos = window.pageYOffset;
 
@@ -54,39 +57,11 @@ window.onscroll = function() {
   prevScrollpos = currentScrollpos;
 }
 
-// var mySwiper = new Swiper ('.swiper-container', {
-//       // Optional parameters
-//       direction: 'vertical',
-//       loop: true,
+//transition btwn pages
+// import Swup from 'swup';
+// const swup = new Swup();
 
-//       // If we need pagination
-//       pagination: {
-//         el: '.swiper-pagination',
-//       },
-
-//       // Navigation arrows
-//       navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//       },
-
-//       // And if we need scrollbar
-//       scrollbar: {
-//         el: '.swiper-scrollbar',
-//       },
-//     })
-
-
-
-
-
-function openNav() {
-  // alert("bruh");
-}
-
-function closeNav(){
-  // alert("bruh2");
-}
+//accessibility
 
 function handleFirstTab(e) {
     if (e.keyCode === 9) { // the "I am a keyboard user" key
