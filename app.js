@@ -3,6 +3,7 @@
 
 const menuBtn = document.querySelector('.menu-btn');
 const subNav = document.querySelector('.overlay a');
+const aboutMe = document.querySelector('.aboutMe');
 
 subNav.addEventListener('click', () => {
     closeOverlay();
@@ -15,6 +16,16 @@ menuBtn.addEventListener('click', () => {
 		closeOverlay();
 	}
 })
+// aboutMe.addEventListener('click', () => {
+//     menuBtn.classList.remove('open');
+//     document.getElementById("myNav").style.height = "0%";
+//     document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)"
+//     document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)"
+//     document.getElementById("ericZ").style.color = "#fff";
+//     document.documentElement.style.overflow = 'scroll';
+//     document.body.scroll = "yes";
+//     menuOpen = false;
+// })
 
 //changing class properties
 function closeOverlay(){
@@ -25,6 +36,7 @@ function closeOverlay(){
     document.getElementById("ericZ").style.color = "#000";
     document.documentElement.style.overflow = 'scroll';
     document.body.scroll = "yes";
+    // document.body.style.backgroundColor = "#000"
     menuOpen = false;
 }
 
@@ -42,14 +54,14 @@ function openOverlay(){
 //scroll to top. swup messes with position?
       // window.scrollTo(0, 0);
 
-var mySwiper = new Swiper ('.swiper-container', {
-          // Optional parameters
-          autoplay: {
-            delay: 4000,
-          },
-          direction: 'horizontal',
-          loop: true,   
-        });
+// var mySwiper = new Swiper ('.swiper-container', {
+//           // Optional parameters
+//           autoplay: {
+//             delay: 4000,
+//           },
+//           direction: 'horizontal',
+//           loop: true,   
+//         });
 
 
 //Scrolling navbar behavior

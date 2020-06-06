@@ -276,6 +276,8 @@ hr.solid {
     justify-content: center;
     align-items: center;
 	font-size: 60px;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
 }    	
 
 .preview{
