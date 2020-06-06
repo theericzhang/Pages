@@ -39,6 +39,20 @@ function openOverlay(){
     menuOpen = true;
 }
 
+//scroll to top. swup messes with position?
+      // window.scrollTo(0, 0);
+
+var mySwiper = new Swiper ('.swiper-container', {
+          // Optional parameters
+          autoplay: {
+            delay: 4000,
+          },
+          direction: 'horizontal',
+          loop: true,   
+        });
+
+
+//Scrolling navbar behavior
 var prevScrollpos = window.pageYOffset;
 
 window.onscroll = function() {
@@ -60,6 +74,10 @@ window.onscroll = function() {
 //transition btwn pages
 // import Swup from 'swup';
 // const swup = new Swup();
+
+// document.addEventListener("DOMContentLoaded", () => {
+//     alert("hi");
+// });
 
 //accessibility
 
