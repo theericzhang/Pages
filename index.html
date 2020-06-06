@@ -55,12 +55,14 @@
 			        <!-- Slides -->
 			        <div class="swiper-slide">
 			        	<img class="preview" src="/BARTmockup.png" alt="BART"></div>
+			        	<!-- <p>bruh</p> -->
 			        <div class="swiper-slide">
 			        	<img class="preview" src="https://lh3.googleusercontent.com/pw/ACtC-3cVQbKUTGdJI776pXeAOlNDNWJwWPAXJgjpvF2Zb9Wo2gXwH6fGffCLQ5KFN-GJD3X0UifGGDzY0sSb7f0WSWlwpd-jJvyft66P0B_0ILZajxJjvBD6RnhU6AAI6-ZSkd-ub4EGftt0viu7qCR31A1F=w1165-h733-no" alt="mbp2020">
 			        	
 			        	</div>
 			        <div class="swiper-slide">Another Thing Goes Here</div>
 			    </div>
+			    <!-- <div class="swiper-pagination"></div> -->
 			</div>
 
 			<section id="container">
@@ -80,6 +82,10 @@
 			<script>
 					  var mySwiper = new Swiper ('.swiper-container', {
 					    // Optional parameters
+					    pagination: {
+					        el: '.swiper-pagination',
+					        type: 'fraction',
+					      },
 					    autoplay: {
 					    	delay: 4000,
 					    	disableOnInteraction: false,
@@ -94,6 +100,10 @@
 					  document.addEventListener('swup:contentReplaced', function () {
 						   var mySwiper = new Swiper ('.swiper-container', {
 							    // Optional parameters
+							    pagination: {
+							        el: '.swiper-pagination',
+							        type: 'fraction',
+							      },
 							    autoplay: {
 							    	delay: 4000,
 							    	disableOnInteraction: false,

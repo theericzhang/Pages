@@ -4,8 +4,12 @@
 const menuBtn = document.querySelector('.menu-btn');
 const subNav = document.querySelector('.overlay a');
 const aboutMe = document.querySelector('.aboutMe');
+const home = document.getElementById("ericZ");
 
 subNav.addEventListener('click', () => {
+    closeOverlay();
+})
+home.addEventListener('click', () => {
     closeOverlay();
 })
 let menuOpen = false;

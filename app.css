@@ -275,6 +275,10 @@ hr.solid {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: neue-haas-unica, sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	text-align: right;
 	font-size: 60px;
 	-webkit-transform: translate3d(0, 0, 0);
 	-webkit-backface-visibility: hidden;
@@ -288,6 +292,14 @@ hr.solid {
 .swiper-wrapper{
 	/*border-top: 82px;*/
 	z-index: 0;
+}
+
+.swiper-pagination{
+	font-family: neue-haas-unica,sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 25px;
+	text-align: right;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
