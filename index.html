@@ -34,7 +34,7 @@
 
 		  <!-- Overlay content -->
 		  <div class="overlay-content">
-		    <a href="/aboutme.html">ABOUT ME</a>
+		    <a id="aboutMe" href="/aboutme.html">ABOUT ME</a>
 		    <hr class="solid">
 		    <a href="/portfolio.html">WORK</a>
 		    <hr class="solid">
@@ -54,10 +54,10 @@
 			    <div class="swiper-wrapper">
 			        <!-- Slides -->
 			        <div class="swiper-slide">
-			        	<img src="https://scontent-sjc3-1.cdninstagram.com/v/t51.2885-15/e35/p1080x1080/84664443_1069992023336913_4550990068249504488_n.jpg?_nc_ht=scontent-sjc3-1.cdninstagram.com&_nc_cat=109&_nc_ohc=3bhl7Yl0q7EAX_1yW3Y&oh=5233a5f18945f66b081becd37ab9152b&oe=5EF5C6A3" alt="Yosemite" width="device-width, initial-scale=1, maximum-scale=1"></div>
+			        	<img class="preview" src="/BARTmockup.png" alt="BART"></div>
 			        <div class="swiper-slide">
-			        	<!-- <img src="https://scontent-sjc3-1.cdninstagram.com/v/t51.2885-15/e35/40315516_2057970254253137_1821342080857800704_n.jpg?_nc_ht=scontent-sjc3-1.cdninstagram.com&_nc_cat=105&_nc_ohc=FyJW9QjBTn0AX-UqHkg&se=7&oh=2712e063f44b754147c13cfe458c4f32&oe=5EF79A01" alt="SaltLake" width="540" height="675"> -->
-			        	Thing Goes Here
+			        	<img class="preview" src="https://lh3.googleusercontent.com/pw/ACtC-3cVQbKUTGdJI776pXeAOlNDNWJwWPAXJgjpvF2Zb9Wo2gXwH6fGffCLQ5KFN-GJD3X0UifGGDzY0sSb7f0WSWlwpd-jJvyft66P0B_0ILZajxJjvBD6RnhU6AAI6-ZSkd-ub4EGftt0viu7qCR31A1F=w1165-h733-no" alt="mbp2020">
+			        	
 			        	</div>
 			        <div class="swiper-slide">Another Thing Goes Here</div>
 			    </div>
@@ -84,7 +84,8 @@
 					    	delay: 4000,
 					    },
 					    direction: 'horizontal',
-					    loop: true,   
+					    loop: true, 
+					    updateOnWindowResize: true,
 					  });
 					  // alert("Bruh");
 
