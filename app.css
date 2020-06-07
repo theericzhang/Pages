@@ -69,6 +69,16 @@ html.is-animating .transition-fade{
 	/*position: top;*/
 }
 
+.transition-fadeAbout{
+	opacity: 1;
+	transition: 300ms;
+	background-color: black;
+}
+
+html.is-animating .transition-fadeAbout{
+	opacity: 0;
+}
+
 /*html.to-aboutme.html .transition-fade{
 	opacity: 0;
 	background-color: black;
@@ -386,6 +396,30 @@ img{
 	padding-top: 14px;
 	padding: 20px 16px;
 }
+
+#containerAbout{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	height: 100vh;
+	padding-top: 14px;
+	padding: 20px 16px;
+	background-color: black;
+}
+
+#swup2{
+	background-color: black;
+}
+
+p.pAbout{
+	max-width: 600px;
+	font-family: 'brandon_grotesquemedium';
+	font-size: 22px;
+	font-weight: normal;
+	color: white;
+}
+
 
 /*#notNav{
 	z-index: -1;

@@ -3,7 +3,7 @@
 
 const menuBtn = document.querySelector('.menu-btn');
 const subNav = document.querySelector('.overlay a');
-const aboutMe = document.querySelector('.aboutMe');
+const aboutMe = document.getElementById("aboutMe");
 const home = document.getElementById("ericZ");
 
 subNav.addEventListener('click', () => {
@@ -20,16 +20,23 @@ menuBtn.addEventListener('click', () => {
 		closeOverlay();
 	}
 })
-// aboutMe.addEventListener('click', () => {
-//     menuBtn.classList.remove('open');
-//     document.getElementById("myNav").style.height = "0%";
-//     document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)"
-//     document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)"
-//     document.getElementById("ericZ").style.color = "#fff";
-//     document.documentElement.style.overflow = 'scroll';
-//     document.body.scroll = "yes";
-//     menuOpen = false;
-// })
+
+if(window.location.pathname==="/aboutme.html"){
+    alert("hi");
+}
+
+aboutMe.addEventListener('click', () => {
+    menuBtn.classList.remove('open');
+    document.getElementById("myNav").style.height = "0%";
+    document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)"
+    document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)"
+    document.getElementById("ericZ").style.color = "#fff";
+    // document.body.backgroundColor = black;
+    document.getElementById("menu-btn__burger").style.background = "#fff";
+    document.documentElement.style.overflow = 'scroll';
+    document.body.scroll = "yes";
+    menuOpen = false;
+})
 
 //changing class properties
 function closeOverlay(){
