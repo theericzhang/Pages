@@ -21,9 +21,9 @@ menuBtn.addEventListener('click', () => {
 	}
 })
 
-if(window.location.pathname==="/aboutme.html"){
-    alert("hi");
-}
+// if(window.location.pathname==="/aboutme.html"){
+//     alert("hi");
+// }
 
 aboutMe.addEventListener('click', () => {
     menuBtn.classList.remove('open');

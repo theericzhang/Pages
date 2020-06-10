@@ -19,6 +19,18 @@
 
 	}
 }*/
+/** { border: 1px solid red; }*/
+
+html{
+    /*width: 100%;*/
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /*overflow-x: hidden;
+    display: flex;*/
+    background-color: white;
+}
+  
 
 @font-face {
     font-family: 'brandon_grotesqueMdIt';
@@ -89,6 +101,11 @@ html.is-animating .transition-fadeAbout{
 	opacity: 0;
 	background-color: black;
 }*/
+
+#aboutBody{
+	background-color: black;
+	/*height: 100%;*/
+}
 
 /*#notNav{
 	z-index: 0;
@@ -211,6 +228,7 @@ html.is-animating .transition-fadeAbout{
 	margin-left: 15px;
 	margin-right: 20px;
 	z-index: 3;
+	/*overflow-x: hidden;*/
 }
 
 .overlay a{
@@ -225,6 +243,8 @@ html.is-animating .transition-fadeAbout{
 	transition: 0.3s;
 	letter-spacing: 0px;
 	z-index: 3;
+	width:100%;
+	/*overflow-x: hidden;*/
 }
 
 .overlay a:hover, .overlay a:focus{
@@ -255,7 +275,7 @@ hr.solid {
 	z-index: 3;
 	padding: 0;
 	margin: 0;
-
+	/*overflow-x: hidden;*/
 }
 
 #navbar a{
@@ -270,6 +290,7 @@ hr.solid {
 	font-weight: 400;
 	font-style: normal;
 	transition: 0.3s;
+	/*overflow-x: hidden;*/
 	/*letter-spacing: 1px;*/
 }
 
@@ -328,6 +349,7 @@ hr.solid {
 		background-color: #FFFFFF; 
 		color: #000000;
 		margin: 0px;
+		/*height: 100vh;*/
 		/*padding: 15px 10px;*/
 	/*	font-family: 'Helvetica Neue';
 		font-weight: 200;*/
@@ -373,6 +395,7 @@ h1{
 		background-color: #FFFFFF; 
 		color: #000000;	
 		margin: 0px;
+		/*height: 100vh;*/
 	}
 
 	/*p{
@@ -392,7 +415,7 @@ img{
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	height: 100vh;
+	height: auto;
 	padding-top: 14px;
 	padding: 20px 16px;
 }
@@ -402,7 +425,7 @@ img{
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	height: 100vh;
+	height: 100%;
 	padding-top: 14px;
 	padding: 20px 16px;
 	background-color: black;
@@ -412,12 +435,19 @@ img{
 	background-color: black;
 }
 
+#swup{
+	min-height: 100%;
+	-webkit-min-height: 100%;
+}
+
 p.pAbout{
 	max-width: 600px;
 	font-family: 'brandon_grotesquemedium';
 	font-size: 22px;
 	font-weight: normal;
 	color: white;
+	/*height: 100%;*/
+
 }
 
 
@@ -485,6 +515,15 @@ h2{
 	margin-top: 82px;
 	font-family: 'neue-haas-unica';
 	font-size: 35px;
+}
+
+#abouth2{
+	text-align: left;
+	padding: 20px 16px;
+	margin-top: 82px;
+	font-family: 'neue-haas-unica';
+	font-size: 35px;
+	color: white;
 }
 
 ::selection {
