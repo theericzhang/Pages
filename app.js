@@ -21,18 +21,35 @@ menuBtn.addEventListener('click', () => {
 	}
 })
 
+// document.getElementById("pAboutFade").style.opacity = 0;
+
+
 // if(window.location.pathname==="/aboutme.html"){
 //     alert("hi");
+// }
+
+// if(document.URL.includes("aboutme.html")){
+//     alert("hi");
+//     document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)"
+//     document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)"
+//     document.getElementById("ericZ").style.color = "#fff";
+//     // document.body.backgroundColor = black;
+//     document.getElementById("menu-btn__burger").style.background = "#fff";
+// }
+
+// if(document.URL.includes("index.html")){
+//   alert("hi2");
+
 // }
 
 aboutMe.addEventListener('click', () => {
     menuBtn.classList.remove('open');
     document.getElementById("myNav").style.height = "0%";
-    document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)"
-    document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)"
+    document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)";
+    document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)";
     document.getElementById("ericZ").style.color = "#fff";
     // document.body.backgroundColor = black;
-    document.getElementById("menu-btn__burger").style.background = "#fff";
+    // document.getElementById("menu-burg").style.background = "#fff";
     document.documentElement.style.overflow = 'scroll';
     document.body.scroll = "yes";
     menuOpen = false;
@@ -40,6 +57,18 @@ aboutMe.addEventListener('click', () => {
 
 //changing class properties
 function closeOverlay(){
+  if(document.URL.includes("aboutme.html")){
+    menuBtn.classList.remove('open');
+    document.getElementById("myNav").style.height = "0%";
+    document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)";
+    document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)";
+    document.getElementById("ericZ").style.color = "#fff";
+    // document.getElementById("menu-btn__burger").style.background = "#fff";
+    document.documentElement.style.overflow = 'scroll';
+    document.body.scroll = "yes";
+    // document.body.style.backgroundColor = "#000"
+    menuOpen = false;
+  }else{
     menuBtn.classList.remove('open');
     document.getElementById("myNav").style.height = "0%";
     document.getElementById("myNav").style.backgroundColor = "#FFF"
@@ -49,6 +78,8 @@ function closeOverlay(){
     document.body.scroll = "yes";
     // document.body.style.backgroundColor = "#000"
     menuOpen = false;
+  }
+    
 }
 
 function openOverlay(){

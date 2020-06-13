@@ -22,7 +22,7 @@
 		<div id ="navbar">
 			<a id = "ericZ" href="/index.html">Eric Zhang</a>
 			<div class="menu-btn">
-			  		<div class="menu-btn__burger"></div>
+			  		<div id ="menu-burg" class="menu-btn__burger"></div>
 			  	</div>
 
 
@@ -96,6 +96,21 @@
 					    
 					  });
 					  // alert("Bruh");
+					  document.addEventListener('swup:willReplaceContent', function (){
+					  	// setTimeout(function(){
+					  		if(document.URL.includes("aboutme.html")){
+						   		document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)";
+							    document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)";
+							    document.getElementById("ericZ").style.color = "#fff";
+							    document.getElementById("menu-burg").style.color = "#fff";
+						   }else{
+						   		document.getElementById("myNav").style.backgroundColor = "#FFF";
+							    document.getElementById("navbar").style.backgroundColor = "#FFF";
+							    document.getElementById("ericZ").style.color = "#000";
+						   }
+					  	// }, 0);
+					  	
+						});
 
 					  document.addEventListener('swup:contentReplaced', function () {
 						   var mySwiper = new Swiper ('.swiper-container', {
@@ -112,7 +127,7 @@
 							    loop: true,
 							    updateOnWindowResize: true,
 							    
-							  });
+							  });							   	
 						}); 
 			</script>
 		</main>
