@@ -536,10 +536,21 @@ h2{
 	padding-right: 16px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	font-family: 'neue-haas-unica';
+	/*font-family: 'neue-haas-unica';*/
 	font-size: 35px;
-	color: white;
+	/*letter-spacing: 0px;*/
+	/*font-weight: 100;*/
+	/*color: white;*/
 	background-color: black;
+
+
+	font-family: neue-haas-unica,sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	text-decoration: none;
+	/*font-size: 22px;*/
+	color: #fff;
+	letter-spacing: 0px;
 }
 
 ::selection {
