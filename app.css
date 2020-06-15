@@ -118,7 +118,7 @@ html.is-animating .transition-fadeAbout{
     overflow: hidden;
     vertical-align: top;
     display: inline-block;
-    top: 0px;
+    /*top: 0px;*/
 }
 
 .preload marquee {
@@ -133,7 +133,7 @@ html.is-animating .transition-fadeAbout{
     font-family: fit,sans-serif;
     z-index: 4;
     overflow: hidden;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 #aboutBody{
