@@ -118,7 +118,7 @@ html.is-animating .transition-fadeAbout{
     overflow: hidden;
     vertical-align: top;
     display: inline-block;
-    /*top: 0px;*/
+    top: 0px;
 }
 
 .preload marquee {
@@ -303,12 +303,12 @@ hr.solid {
 	background-color: #FFF;
 	transition: 0.3s;
 	position: fixed;
-	top: 0;
+	top: 0px;
 	width: 100%;
 	/*transition: top 0.3s;*/
 	z-index: 3;
-	padding: 0;
-	margin: 0;
+	/*padding: 0;*/
+	/*margin: 0;*/
 	/*overflow-x: hidden;*/
 }
 
