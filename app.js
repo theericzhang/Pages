@@ -21,6 +21,12 @@ menuBtn.addEventListener('click', () => {
 	}
 })
 
+TweenMax.to(".preload", 2.2, {
+    delay: 2,
+    top: "-100%",
+    ease: Expo.easeInOut
+});
+
 // document.getElementById("pAboutFade").style.opacity = 0;
 
 
