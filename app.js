@@ -14,18 +14,70 @@ home.addEventListener('click', () => {
 })
 let menuOpen = false;
 menuBtn.addEventListener('click', () => {
-	if(!menuOpen){
-		openOverlay();
-	}else{
-		closeOverlay();
-	}
+    if (!menuOpen) {
+        openOverlay();
+    } else {
+        closeOverlay();
+    }
 })
 
+var textWrapper = document.querySelector(".intro-title");
+textWrapper.innerHTML = textWrapper.textContent.replace(
+    /([^\x00-\x80]|\w)/g,
+    "<span class='letter'>$&</span>"
+);
+
+anime
+    .timeline({ loop: false })
+    .add({
+        targets: ".intro-title .letter",
+        // translateX: [140, 0],
+        translateY: 50,
+        translateZ: 30,
+        scale: 1,
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 1400,
+        delay: function(el, i) {
+            return 200 + 50 * i;
+        }
+    })
+    .add({
+        targets: ".intro-title .letter",
+        // translateX: [0, -140],
+        translateY: 100,
+        translateZ: -30,
+        scale: 0.8,
+        opacity: [1, 0],
+        easing: "easeInExpo",
+        duration: 1200,
+        delay: function(el, i) {
+            return 50 * i;
+        }
+    });
+
+
 TweenMax.to(".preload", 2.2, {
-    delay: 2,
-    top: "-100%",
+    delay: 3,
+    // top: "-100%",
+    opacity: "0",
     ease: Expo.easeInOut
 });
+
+TweenMax.to(".preload", 0.1, {
+    delay: 5,
+    top: "-100%",
+});
+
+if (TweenMax.isTweening(".preload")) {
+    // is tweening
+    console.log("scroll");
+    // document.body.scroll = "no";
+} else {
+    // not tweening
+    console.log("not tweening");
+    // document.body.scroll = "yes";
+}
 
 // document.getElementById("pAboutFade").style.opacity = 0;
 
@@ -62,33 +114,33 @@ aboutMe.addEventListener('click', () => {
 })
 
 //changing class properties
-function closeOverlay(){
-  if(document.URL.includes("aboutme.html")){
-    menuBtn.classList.remove('open');
-    document.getElementById("myNav").style.height = "0%";
-    document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)";
-    document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)";
-    document.getElementById("ericZ").style.color = "#fff";
-    // document.getElementById("menu-btn__burger").style.background = "#fff";
-    document.documentElement.style.overflow = 'scroll';
-    document.body.scroll = "yes";
-    // document.body.style.backgroundColor = "#000"
-    menuOpen = false;
-  }else{
-    menuBtn.classList.remove('open');
-    document.getElementById("myNav").style.height = "0%";
-    document.getElementById("myNav").style.backgroundColor = "#FFF"
-    document.getElementById("navbar").style.backgroundColor = "#FFF"
-    document.getElementById("ericZ").style.color = "#000";
-    document.documentElement.style.overflow = 'scroll';
-    document.body.scroll = "yes";
-    // document.body.style.backgroundColor = "#000"
-    menuOpen = false;
-  }
-    
+function closeOverlay() {
+    if (document.URL.includes("aboutme.html")) {
+        menuBtn.classList.remove('open');
+        document.getElementById("myNav").style.height = "0%";
+        document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)";
+        document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)";
+        document.getElementById("ericZ").style.color = "#fff";
+        // document.getElementById("menu-btn__burger").style.background = "#fff";
+        document.documentElement.style.overflow = 'scroll';
+        document.body.scroll = "yes";
+        // document.body.style.backgroundColor = "#000"
+        menuOpen = false;
+    } else {
+        menuBtn.classList.remove('open');
+        document.getElementById("myNav").style.height = "0%";
+        document.getElementById("myNav").style.backgroundColor = "#FFF"
+        document.getElementById("navbar").style.backgroundColor = "#FFF"
+        document.getElementById("ericZ").style.color = "#000";
+        document.documentElement.style.overflow = 'scroll';
+        document.body.scroll = "yes";
+        // document.body.style.backgroundColor = "#000"
+        menuOpen = false;
+    }
+
 }
 
-function openOverlay(){
+function openOverlay() {
     menuBtn.classList.add('open');
     document.getElementById("myNav").style.height = "100%";
     document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)"
@@ -100,7 +152,7 @@ function openOverlay(){
 }
 
 //scroll to top. swup messes with position?
-      // window.scrollTo(0, 0);
+// window.scrollTo(0, 0);
 
 // var mySwiper = new Swiper ('.swiper-container', {
 //           // Optional parameters
@@ -116,19 +168,17 @@ function openOverlay(){
 var prevScrollpos = window.pageYOffset;
 
 window.onscroll = function() {
-  var currentScrollpos = window.pageYOffset;
+    var currentScrollpos = window.pageYOffset;
 
-  if(prevScrollpos > currentScrollpos){
-    document.getElementById("navbar").style.top = "0";
-  }else if(prevScrollpos <= 82){
-    document.getElementById("navbar").style.top = "0";
-  }
+    if (prevScrollpos > currentScrollpos) {
+        document.getElementById("navbar").style.top = "0";
+    } else if (prevScrollpos <= 82) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-90px";
+    }
 
-  else{
-    document.getElementById("navbar").style.top = "-90px";
-  }
-
-  prevScrollpos = currentScrollpos;
+    prevScrollpos = currentScrollpos;
 }
 
 //transition btwn pages
@@ -149,5 +199,3 @@ function handleFirstTab(e) {
 }
 
 window.addEventListener('keydown', handleFirstTab);
-
-
