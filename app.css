@@ -21,14 +21,18 @@
 }*/
 /** { border: 1px solid red; }*/
 
+/*.swup-enabled {
+	height: 100vh;
+}*/
+
 html {
     /*width: 100%;*/
-    height: 100%;
-    margin: 0;
-    padding: 0;
+    height: 100vh;
+    /*margin: 0;*/
+    /*padding: 0;*/
     /*overflow-x: hidden;
     display: flex;*/
-    background-color: white;
+    background-color: black;
 }
 
 
@@ -89,6 +93,17 @@ html.is-animating .transition-fade {
     opacity: 1;
     -webkit-transition: 400ms;
     background-color: black;
+    /*height: 100;*/
+
+    overflow: scroll;
+    /*background-color: black;*/
+}
+
+@media screen and (min-height: 1080px){
+	.transition-fadeAbout{
+		height: 100vh;
+		overflow: scroll;
+	}
 }
 
 html.is-animating .transition-fadeAbout {
@@ -139,7 +154,9 @@ html.is-animating .transition-fadeAbout {
 
 #aboutBody {
     background-color: black;
-    /*height: 100%;*/
+    height: 100vh;
+    vertical-align: top;
+    /*display: flex;*/
 }
 
 /*#notNav{
@@ -336,7 +353,7 @@ hr.solid {
 
 .swiper-container {
     height: 400px;
-    margin-top: 82px;
+    border-top: 82px;
     z-index: 0;
 }
 
@@ -455,12 +472,15 @@ h1 {
   margin: auto;
   float: left;
   width: 50%;
-  height: 100%;
+  align-items: flex-start;
+      justify-content: flex-start;
+
+  /*height: 100%;*/
   /*flex-direction: column;*/
-  align-items: top;
+/*  align-items: top;
   align-content: top;
 	justify-content: top;
-	vertical-align: top;
+	vertical-align: top;*/
   /*top: 50%;*/
   /*left: 50%;*/
   /*justify-content: center;*/
@@ -472,14 +492,14 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	margin-right: auto;
-	align-items: left;
-	float: left;
+	align-items: top;
+	/*float: left;*/
 	width: 50%;
 	height: 100%;
-	align-content: center;
+	/*align-content: center;
 	justify-content: center;
 	vertical-align: center;
-	overflow: scroll;
+	overflow: scroll;*/
 	/*text-align: center;*/
 }
 
@@ -500,26 +520,33 @@ p.pAbout {
 
 }
 
-
+#containerAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: top;*/
+    height: 100%;
+    /*padding-top: 82px;*/
+    padding: 0px 16px;
+    background-color: black;
+}
 
 
 /* Clear floats after the columns */
-/*.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}*/
+
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
     height: 100%;
+    /*display: block;*/
   }
   .columnRight {
   	width: 100%;
-  	display: block;
-  	overflow: hidden;
+  	/*display: flex;*/
+  	height: 100%;
+  	/*overflow: visible;*/
   }
   p.pAbout {
   	margin-left: 0px;
@@ -528,6 +555,18 @@ p.pAbout {
   h1 {
   	font-size: 100px;
   }
+
+  #containerAbout {
+  	display: block;
+  }
+
+  .row {
+	display: flex;
+	flex-direction: column;
+	}
+
+
+
   /*img{
   	width: 100%;
   	height: 100%;
@@ -540,7 +579,7 @@ img.portrait {
     background-position: center center;
     background-repeat: no-repeat;
     object-fit: contain;
-    align-items: center;
+    /*align-items: top;*/
 }
 
 
@@ -554,24 +593,20 @@ img.portrait {
     padding: 20px 16px;
 }
 
-#containerAbout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    /*padding-top: 82px;*/
-    padding: 0px 16px;
-    background-color: black;
-}
+
 
 #swup2 {
+    /*background-color: black;*/
+    height: 100vh;
     background-color: black;
 }
 
 #swup {
-    min-height: 100%;
-    -webkit-min-height: 100%;
+    /*min-height: 100%;*/
+    /*-webkit-min-height: 100%;*/
+    /*height: 100vh;*/
+    /*display: flex;*/
+    /*background-color: black;*/
 }
 
 
