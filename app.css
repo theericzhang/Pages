@@ -95,14 +95,14 @@ html.is-animating .transition-fade {
     background-color: black;
     /*height: 100;*/
 
-    overflow: scroll;
+    /*overflow: scroll;*/
     /*background-color: black;*/
 }
 
 @media screen and (min-height: 1080px){
 	.transition-fadeAbout{
 		height: 100vh;
-		overflow: scroll;
+		overflow: auto;
 	}
 }
 
