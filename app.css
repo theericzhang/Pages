@@ -102,7 +102,7 @@ html.is-animating .transition-fade {
 @media screen and (min-height: 1080px){
 	.transition-fadeAbout{
 		height: 100vh;
-		overflow: auto;
+		/*overflow: auto;*/
 	}
 }
 
