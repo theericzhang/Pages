@@ -40,15 +40,18 @@
         <div class="menu-btn">
             <div id="menu-burg" class="menu-btn__burger"></div>
         </div>
+        <div id="rightNav">
+	        <a id="rightContact" href="/contact.html">CONTACT</a>
+	        <a id="rightWork" href="/work.html">WORK</a>
+	        <a id="rightAbout" href="/aboutme.html">ABOUT</a>
+	    </div>
     </div>
     <div id="myNav" class="overlay">
         <!-- Overlay content -->
         <div class="overlay-content">
-            <a id="aboutMe" href="/aboutme.html">ABOUT ME</a>
+            <a id="aboutMe" href="/aboutme.html">ABOUT</a>
             <hr class="solid">
-            <a href="/portfolio.html">WORK</a>
-            <hr class="solid">
-            <a href="/clients.html">CLIENTS</a>
+            <a href="/work.html">WORK</a>
             <hr class="solid">
             <a href="/contacts.html">CONTACT</a>
             <hr class="solid">
@@ -96,17 +99,23 @@
 
         });
         // alert("Bruh");
-        document.addEventListener('swup:willReplaceContent', function() {
+        document.addEventListener('swup:animationInStart', function() {
             // setTimeout(function(){
             if (document.URL.includes("aboutme.html")) {
                 document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)";
                 document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)";
                 document.getElementById("ericZ").style.color = "#fff";
                 document.getElementById("menu-burg").style.color = "#fff";
+                document.getElementById("rightAbout").style.color = "#fff";
+                document.getElementById("rightWork").style.color = "#fff";
+                document.getElementById("rightContact").style.color = "#fff";
             } else {
                 document.getElementById("myNav").style.backgroundColor = "#FFF";
                 document.getElementById("navbar").style.backgroundColor = "#FFF";
                 document.getElementById("ericZ").style.color = "#000";
+                document.getElementById("rightAbout").style.color = "#000";
+                document.getElementById("rightWork").style.color = "#000";
+                document.getElementById("rightContact").style.color = "#000";
             }
             // }, 0);
 

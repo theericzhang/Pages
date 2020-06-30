@@ -54,6 +54,55 @@ anime
         delay: function(el, i) {
             return 50 * i;
         }
+    })
+    .add({
+      targets: '#ericZ',
+      translateY: [20,0],
+      opacity: [0,1],
+      easing: 'easeInExpo',
+      duration: 400,
+      delay: 300
+    })
+    // anime.stagger(100)
+    .add({
+      targets: '#rightContact',
+      translateY: [20,0],
+      opacity: [0,1],
+      easing: 'easeInExpo',
+      duration: 400,
+      offset: '-=300'
+    })
+    .add({
+      targets: '#rightWork',
+      translateY: [20,0],
+      opacity: [0,1],
+      easing: 'easeInExpo',
+      duration: 400,
+      offset: '-=300'
+    })
+    .add({
+      targets: '#rightAbout',
+      translateY: [20,0],
+      opacity: [0,1],
+      easing: 'easeInExpo',
+      duration: 400,
+      offset: '-=300'
+    })
+    .add({
+      targets: '.menu-btn__burger',
+      translateY: [20,0],
+      opacity: [0,1],
+      easing: 'easeInExpo',
+      duration: 400,
+      offset: '-=600'
+    })
+    .add({
+      targets: '.pAbout',
+      translateY: [20,0],
+      opacity: [0,1],
+      easing: 'easeInExpo',
+      duration: 400,
+      delay: 0
     });
 
 

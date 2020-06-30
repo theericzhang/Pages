@@ -99,11 +99,11 @@ html.is-animating .transition-fade {
     /*background-color: black;*/
 }
 
-@media screen and (min-height: 1080px){
-	.transition-fadeAbout{
-		height: 100vh;
-		/*overflow: auto;*/
-	}
+@media screen and (min-height: 1080px) {
+    .transition-fadeAbout {
+        height: 100vh;
+        /*overflow: auto;*/
+    }
 }
 
 html.is-animating .transition-fadeAbout {
@@ -182,7 +182,7 @@ html.is-animating .transition-fadeAbout {
     padding: 0px 5px;
     right: 0;
     position: fixed;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 50px;
@@ -262,7 +262,8 @@ html.is-animating .transition-fadeAbout {
     /*background-color: rgba(0,0,0,0.9);*/
     background-color: #FFF;
     overflow-x: hidden;
-    transition: 0.3s;
+    transition: 0.4s;
+    /*display: none;*/
 }
 
 [aria-hidden="true"] {
@@ -284,19 +285,20 @@ html.is-animating .transition-fadeAbout {
     margin-left: 15px;
     margin-right: 20px;
     z-index: 3;
+    /*display:none;*/
     /*overflow-x: hidden;*/
 }
 
 .overlay a {
-    font-family: neue-haas-unica, sans-serif;
-    font-weight: 100;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 800;
     font-style: normal;
     padding: 15px 0px;
     text-decoration: none;
     font-size: 22px;
     color: #fff;
     display: block;
-    transition: 0.3s;
+    transition: 0.4s;
     letter-spacing: 0px;
     z-index: 3;
     width: 100%;
@@ -324,11 +326,11 @@ hr.solid {
 
 #navbar {
     background-color: #FFF;
-    transition: 0.3s;
+    -webkit-transition: 0.4s;
     position: fixed;
     top: 0px;
     width: 100%;
-    /*transition: top 0.3s;*/
+    /*transition: top 0.4s;*/
     z-index: 3;
     /*padding: 0;*/
     /*margin: 0;*/
@@ -336,6 +338,7 @@ hr.solid {
 }
 
 #navbar a {
+    margin-left: auto;
     float: left;
     display: block;
     color: #000;
@@ -346,14 +349,43 @@ hr.solid {
     font-family: fit, sans-serif;
     font-weight: 400;
     font-style: normal;
-    transition: 0.3s;
+    transition: 0.4s;
     /*overflow-x: hidden;*/
     /*letter-spacing: 1px;*/
 }
 
+#rightNav a {
+	float: right;
+    display: block;
+    color: #000;
+    text-align: center;
+    justify-content: center;
+    padding: 25px 15px;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    /*font-family: neue-haas-unica;
+    font-weight: 400;
+    font-style: normal;*/
+    font-family: brandon-grotesque,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+    transition: 0.4s;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    /*transition: background-size .3s;*/
+}
+
+#rightNav a:hover, #rightNav a:focus{
+	background-size: 100% 2px;
+} 
+
 .swiper-container {
-    height: 400px;
-    border-top: 82px;
+    height: 100vh;
+    border-top: 82px solid white;
     z-index: 0;
 }
 
@@ -416,7 +448,7 @@ hr.solid {
 		font-weight: 200;*/
     }
 
-    
+
 }
 
 h1 {
@@ -431,7 +463,7 @@ h1 {
     font-family: fit, sans-serif;
     font-weight: 400;
     font-style: normal;
-    /*transition: 0.3s;*/
+    /*transition: 0.4s;*/
 }
 
 .intro-title .letter {
@@ -458,49 +490,50 @@ h1 {
         /*height: 100vh;*/
     }
 }
-    /*p{
+
+/*p{
 		max-width: 600px;
 	}
 } */
 
 /* Create two equal columns that floats next to each other */
 .column {
-	/*display: flex;*/
-	/*align-items: center;*/
-  max-width: 600px;
-  display: flex;
-  margin: auto;
-  float: left;
-  width: 50%;
-  align-items: flex-start;
-      justify-content: flex-start;
+    /*display: flex;*/
+    /*align-items: center;*/
+    max-width: 600px;
+    display: flex;
+    margin: auto;
+    float: left;
+    width: 50%;
+    align-items: flex-start;
+    justify-content: flex-start;
 
-  /*height: 100%;*/
-  /*flex-direction: column;*/
-/*  align-items: top;
+    /*height: 100%;*/
+    /*flex-direction: column;*/
+    /*  align-items: top;
   align-content: top;
 	justify-content: top;
 	vertical-align: top;*/
-  /*top: 50%;*/
-  /*left: 50%;*/
-  /*justify-content: center;*/
-  /*padding: 10px;*/
-  /*height: 300px;  Should be removed. Only for demonstration */
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*justify-content: center;*/
+    /*padding: 10px;*/
+    /*height: 300px;  Should be removed. Only for demonstration */
 }
 
 .columnRight {
-	display: flex;
-	flex-direction: column;
-	margin-right: auto;
-	align-items: top;
-	/*float: left;*/
-	width: 50%;
-	height: 100%;
-	/*align-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    align-items: top;
+    /*float: left;*/
+    width: 50%;
+    height: 100%;
+    /*align-content: center;
 	justify-content: center;
 	vertical-align: center;
 	overflow: scroll;*/
-	/*text-align: center;*/
+    /*text-align: center;*/
 }
 
 p.pAbout {
@@ -537,38 +570,81 @@ p.pAbout {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    /*display: block;*/
-  }
-  .columnRight {
-  	width: 100%;
-  	/*display: flex;*/
-  	height: 100%;
-  	overflow: visible;
-  }
-  p.pAbout {
-  	margin-left: 0px;
-  	/*color: blue;*/
-  }
-  h1 {
-  	font-size: 100px;
-  }
+    .column {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+        /*display: block;*/
+    }
 
-  #containerAbout {
-  	display: block;
-  }
+    .columnRight {
+        width: 100%;
+        /*display: flex;*/
+        height: 100%;
+        overflow: visible;
+    }
 
-  .row {
-	display: flex;
-	flex-direction: column;
+    p.pAbout {
+        margin-left: 0px;
+        /*color: blue;*/
+    }
+
+    h1 {
+        font-size: 100px;
+    }
+
+    #containerAbout {
+        display: block;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 5%;
+        width: 100%;
+        text-align: left;
+        margin-top: 55px;
+        margin-bottom: 55px;
+        margin-left: 15px;
+        margin-right: 20px;
+        z-index: 3;
+        /*overflow-x: hidden;*/
+    }
+
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        /*background-color: rgb(0,0,0);*/
+        /*background-color: rgba(0,0,0,0.9);*/
+        background-color: #FFF;
+        overflow-x: hidden;
+        transition: 0.4s;
+    }
+
+    #rightNav {
+    	display: none;
+    }
+
+    .swiper-container {
+	    height: 400px;
 	}
 
 
 
-  /*img{
+
+    /*img{
   	width: 100%;
   	height: 100%;
   }*/
@@ -700,8 +776,8 @@ h2 {
     background-color: black;
 
 
-    font-family: neue-haas-unica, sans-serif;
-    font-weight: 100;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 800;
     font-style: normal;
     text-decoration: none;
     /*font-size: 22px;*/
