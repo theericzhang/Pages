@@ -99,10 +99,24 @@ html.is-animating .transition-fade {
     /*background-color: black;*/
 }
 
+.transition-fadeWork {
+    opacity: 1;
+    -webkit-transition: 400ms;
+    background-color: white;
+    /*height: 100;*/
+
+    /*overflow: scroll;*/
+    /*background-color: black;*/
+}
+
 @media screen and (min-height: 1080px) {
     .transition-fadeAbout {
         height: 100vh;
         /*overflow: auto;*/
+    }
+
+    .transition-fadeWork {
+    	height: 100vh;
     }
 }
 
@@ -111,6 +125,13 @@ html.is-animating .transition-fadeAbout {
     -webkit-transition: 400ms;
     /*transition-timing-function: ease-in-out;*/
     background-color: black;
+}
+
+html.is-animating .transition-fadeWork {
+    opacity: 0;
+    -webkit-transition: 400ms;
+    /*transition-timing-function: ease-in-out;*/
+    background-color: white;
 }
 
 /*html.to-aboutme.html .transition-fade{
@@ -154,6 +175,13 @@ html.is-animating .transition-fadeAbout {
 
 #aboutBody {
     background-color: black;
+    height: 100vh;
+    vertical-align: top;
+    /*display: flex;*/
+}
+
+#workBody {
+    background-color: white;
     height: 100vh;
     vertical-align: top;
     /*display: flex;*/
@@ -323,6 +351,12 @@ hr.solid {
 
 }*/
 
+#navinner {
+	align-items: center;
+	max-width: 1248px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 #navbar {
     background-color: #FFF;
@@ -564,6 +598,17 @@ p.pAbout {
     background-color: black;
 }
 
+#containerWork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: top;*/
+    height: 100%;
+    /*padding-top: 82px;*/
+    padding: 0px 16px;
+    background-color: white;
+}
+
 
 /* Clear floats after the columns */
 
@@ -595,6 +640,10 @@ p.pAbout {
 
     #containerAbout {
         display: block;
+    }
+
+    #containerWork {
+    	display: block;
     }
 
     .row {
@@ -659,6 +708,14 @@ img.portrait {
     /*position: sticky;*/
     /*align-items: top;*/
 }
+
+/*.imgSwap{
+	width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}*/
 
 
 #container {
@@ -776,7 +833,7 @@ h2 {
     background-color: black;
 
 
-    font-family: brandon-grotesque, sans-serif;
+    font-family: neue-haas-unica, sans-serif;
     font-weight: 800;
     font-style: normal;
     text-decoration: none;

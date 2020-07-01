@@ -11,6 +11,7 @@
     <!-- typefaces -->
     <link rel="stylesheet" href="https://use.typekit.net/ekl6qyr.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
 
@@ -37,7 +38,6 @@
         	<div class="row">
         		<h2 id="abouth2"></br>About Me</h2>
         		<div class="column">
-        			
         			<img class="portrait" src="/imgs/EZ.png">
         		</div>
         		<div class="columnRight">
@@ -62,46 +62,69 @@
         	</div>
         </section>
         <script>
-        	// document.getElementById("aboutBody").style.backgroundColor = "black";
-       //  	anime
-	    		// .timeline({ loop: false })
-	      //   	.add({
-			    //     targets: ".column",
-			    //     translateX: 50,
-			    //     opacity: [0, 1],
-			    //     easing: "easeOutExpo",
-			    //     duration: 500,
-			    //     delay: 200,
-			    // })
-			    // .add({
-			    //     targets: ".columnRight",
-			    //     translateX: -50,
-			    //     opacity: [0, 1],
-			    //     easing: "easeOutExpo",
-			    //     duration: 500,
-			    //     delay: 200,
-			    // });
+        	anime
+        		.timeline({ loop: false})
+        		.add({
+			      targets: '.pAbout',
+			      translateY: [20,0],
+			      opacity: [0,1],
+			      easing: 'easeInExpo',
+			      duration: 400,
+			      delay: 0
+			    })
+			    .add({
+			      targets: '#abouth2',
+			      translateY: [20,0],
+			      opacity: [0,1],
+			      easing: 'easeInExpo',
+			      duration: 400,
+			      delay: 0
+			    })
+			    .add({
+			      targets: '.portrait',
+			      translateY: [20,0],
+			      opacity: [0,1],
+			      easing: 'easeInExpo',
+			      duration: 400,
+			      delay: 0
+			    })
+			    .add({
 
-			    // document.addEventListener('swup:contentReplaced', function() {
-		     //        anime
-		    	// 	.timeline({ loop: false })
-		     //    	.add({
-				   //      targets: ".column",
-				   //      translateX: 50,
-				   //      opacity: [0, 1],
-				   //      easing: "easeOutExpo",
-				   //      duration: 500,
-				   //      delay: 200,
-				   //  })
-				   //  .add({
-				   //      targets: ".columnRight",
-				   //      translateX: -50,
-				   //      opacity: [0, 1],
-				   //      easing: "easeOutExpo",
-				   //      duration: 500,
-				   //      delay: 200,
-				   //  });
-		     //    });
+			    });
+        	
+
+			document.addEventListener('swup:contentReplaced', function() {
+		            // alert("bruhhh");
+		            anime
+			    		.timeline({ loop: false })
+					    .add({
+					      targets: '.pAbout',
+					      translateY: [20,0],
+					      opacity: [0,1],
+					      easing: 'easeInExpo',
+					      duration: 400,
+					      delay: 2000
+					    })
+					    .add({
+					      targets: '.portrait',
+					      translateY: [20,0],
+					      opacity: [0,1],
+					      easing: 'easeInExpo',
+					      duration: 400,
+					      delay: 2000
+					    })
+					    .add({
+					      targets: '#pAboutFade',
+					      translateY: [20,0],
+					      opacity: [0,1],
+					      easing: 'easeInExpo',
+					      duration: 400,
+					      delay: 2000
+					    })
+					    .add({
+
+					    });
+			    });    
 
         // 	document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)";
         //     document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)";
@@ -121,6 +144,8 @@
     <script src="app.js"></script>
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
     <script src="SwupScrollPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r118/three.min.js"></script>
+    <!-- <script src="hover-effect.umd.js"></script> -->
 </body>
 
 </html>

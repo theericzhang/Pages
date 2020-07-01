@@ -32,28 +32,30 @@
         <marquee behavior="" direction="right" scrollamount="20">CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN </marquee>
         <marquee behavior="" direction="left" scrollamount="40">CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN </marquee> -->
         <div class="intro">
-                <h1 class="intro-title">ERIC ZHANG</h1>
-            </div>
+            <h1 class="intro-title">ERIC ZHANG</h1>
+        </div>
     </div>
     <div id="navbar">
-        <a id="ericZ" href="/index.html">Eric Zhang</a>
-        <div class="menu-btn">
-            <div id="menu-burg" class="menu-btn__burger"></div>
+        <div id="navinner">
+            <a id="ericZ" href="/index.html">Eric Zhang</a>
+            <div class="menu-btn">
+                <div id="menu-burg" class="menu-btn__burger"></div>
+            </div>
+            <div id="rightNav">
+                <a id="rightContact" href="/contact.html">CONTACT</a>
+                <a id="rightWork" href="/work.html">WORK</a>
+                <a id="rightAbout" href="/aboutme.html">ABOUT</a>
+            </div>
         </div>
-        <div id="rightNav">
-	        <a id="rightContact" href="/contact.html">CONTACT</a>
-	        <a id="rightWork" href="/work.html">WORK</a>
-	        <a id="rightAbout" href="/aboutme.html">ABOUT</a>
-	    </div>
     </div>
     <div id="myNav" class="overlay">
         <!-- Overlay content -->
         <div class="overlay-content">
             <a id="aboutMe" href="/aboutme.html">ABOUT</a>
             <hr class="solid">
-            <a href="/work.html">WORK</a>
+            <a id="myWork" href="/work.html">WORK</a>
             <hr class="solid">
-            <a href="/contacts.html">CONTACT</a>
+            <a id="myContact" href="/contact.html">CONTACT</a>
             <hr class="solid">
         </div>
     </div>
@@ -69,7 +71,9 @@
                 <div class="swiper-slide">
                     <img class="preview" src="https://lh3.googleusercontent.com/pw/ACtC-3cVQbKUTGdJI776pXeAOlNDNWJwWPAXJgjpvF2Zb9Wo2gXwH6fGffCLQ5KFN-GJD3X0UifGGDzY0sSb7f0WSWlwpd-jJvyft66P0B_0ILZajxJjvBD6RnhU6AAI6-ZSkd-ub4EGftt0viu7qCR31A1F=w1165-h733-no" alt="mbp2020">
                 </div>
-                <div class="swiper-slide">Another Thing Goes Here</div>
+                <div class="swiper-slide">
+                	<img class="preview" src="/17.jpg" alt="OOUI">
+                </div>
             </div>
             <!-- <div class="swiper-pagination"></div> -->
         </div>
@@ -137,12 +141,43 @@
                 updateOnWindowResize: true,
 
             });
+
+            anime
+                .timeline({ loop: false })
+                .add({
+                	targets: '#abouth2',
+                	translateY: [60, 0],
+                	opacity: [0, 1],
+                	easing: 'easeOutExpo',
+                	duration: 600,
+                	delay: 200
+                })
+                .add({
+                    targets: '.portrait',
+                    translateY: [60, 0],
+                    opacity: [0, 1],
+                    easing: 'easeOutExpo',
+                    duration: 600,
+                    offset: '-=500'
+                })
+                .add({
+                    targets: '.pAbout',
+                    translateY: [60, 0],
+                    opacity: [0, 1],
+                    easing: 'easeOutExpo',
+                    duration: 600,
+                    offset: '-=500'
+                })
+                .add({
+
+                });
         });
         </script>
     </main>
     <script src="app.js"></script>
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
     <script src="SwupScrollPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r118/three.min.js"></script>
     <script>
     // const options = {
     //   animateHistoryBrowsing: true;

@@ -4,6 +4,7 @@
 const menuBtn = document.querySelector('.menu-btn');
 const subNav = document.querySelector('.overlay a');
 const aboutMe = document.getElementById("aboutMe");
+const myWork = document.getElementById("myWork");
 const home = document.getElementById("ericZ");
 
 subNav.addEventListener('click', () => {
@@ -92,10 +93,18 @@ anime
       targets: '.menu-btn__burger',
       translateY: [20,0],
       opacity: [0,1],
-      easing: 'easeInExpo',
+      easing: 'easeOutExpo',
       duration: 400,
       offset: '-=600'
     })
+    // .add({
+    //   targets: '.preview',
+    //   translateY: [20,0],
+    //   opacity: [0,1],
+    //   easing: 'easeOutExpo',
+    //   duration: 400,
+    //   offset: '+=300'
+    // })
     .add({
       targets: '.pAbout',
       translateY: [20,0],
@@ -104,7 +113,6 @@ anime
       duration: 400,
       delay: 0
     });
-
 
 TweenMax.to(".preload", 2.2, {
     delay: 3,
@@ -150,6 +158,19 @@ if (TweenMax.isTweening(".preload")) {
 // }
 
 aboutMe.addEventListener('click', () => {
+    menuBtn.classList.remove('open');
+    document.getElementById("myNav").style.height = "0%";
+    document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)";
+    document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)";
+    document.getElementById("ericZ").style.color = "#fff";
+    // document.body.backgroundColor = black;
+    // document.getElementById("menu-burg").style.background = "#fff";
+    document.documentElement.style.overflow = 'scroll';
+    document.body.scroll = "yes";
+    menuOpen = false;
+})
+
+myWork.addEventListener('click', () => {
     menuBtn.classList.remove('open');
     document.getElementById("myNav").style.height = "0%";
     document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)";
