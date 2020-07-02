@@ -33,8 +33,8 @@ anime
     .add({
         targets: ".intro-title .letter",
         // translateX: [140, 0],
-        translateY: 50,
-        translateZ: 30,
+        translateY: [100,200],
+        // translateZ: 30,
         scale: 1,
         opacity: [0, 1],
         easing: "easeOutExpo",
@@ -46,9 +46,9 @@ anime
     .add({
         targets: ".intro-title .letter",
         // translateX: [0, -140],
-        translateY: 100,
-        translateZ: -30,
-        scale: 0.8,
+        translateY: [200,100],
+        // translateZ: 0,
+        scale: 1,
         opacity: [1, 0],
         easing: "easeInExpo",
         duration: 1200,

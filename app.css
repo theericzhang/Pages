@@ -504,6 +504,13 @@ h1 {
     display: inline-block;
     /*line-height: 1em;*/
     scale: 0.8;
+    text-align: center;
+	vertical-align: middle;
+}
+
+.intro-title {
+	text-align: center;
+	vertical-align: middle;
 }
 
 /*@media (max-width: 800px) and (min-width: 240px){
