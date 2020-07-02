@@ -20,6 +20,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </head>
 
 <body>
@@ -168,9 +169,72 @@
                     duration: 600,
                     offset: '-=500'
                 })
-                .add({
+                .add({});
 
-                });
+            anime
+            	.timeline({ loop: false })
+            	.add({
+                	targets: '#workh2',
+                	translateY: [60, 0],
+                	opacity: [0, 1],
+                	easing: 'easeOutExpo',
+                	duration: 600,
+                	delay: 600
+                })
+                .add({
+                    targets: '.workPreview',
+                    translateY: [60, 0],
+                    opacity: [0, 1],
+                    easing: 'easeOutExpo',
+                    duration: 600,
+                    offset: '-=500'
+                })
+                // .add({
+                //     targets: '.fields',
+                //     translateY: [60, 0],
+                //     opacity: [0, 1],
+                //     easing: 'easeOutExpo',
+                //     duration: 600,
+                //     offset: '-=500'
+                // })
+                // .add({
+                //     targets: 'h3',
+                //     translateY: [60, 0],
+                //     opacity: [0, 1],
+                //     easing: 'easeOutExpo',
+                //     duration: 600,
+                //     offset: '-=500'
+                // })
+                .add({
+                	targets: '.columnLabel',
+                    translateY: [60, 0],
+                    opacity: [0, 1],
+                    easing: 'easeOutExpo',
+                    duration: 600,
+                    offset: '-=500'
+                })
+                .add({});
+
+            var myAnimation = new hoverEffect({
+		        parent: document.querySelector('.workPreview'),
+		        intensity: 0.5,
+		        speedIn: 0.8,
+		        speedOut: 0.6,
+		        angle: 5 * Math.PI / 4,
+		        image1: '/imgs/Scene.png',
+		        image2: '/imgs/PosterMockup.png',
+		        displacementImage: '/imgs/facade.jpg'
+		    });
+
+		    document.getElementById("workPreviewID").onmouseover = function () {
+		    	// alert("chill bruh");
+		    	document.getElementById("menu-item-wrapper-id").style.left = 0;
+		    }
+
+		    document.getElementById("workPreviewID").onmouseout = function () {
+		    	document.getElementById("menu-item-wrapper-id").style.left = "-45px"; 
+		    }
+
         });
         </script>
     </main>
@@ -178,6 +242,8 @@
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
     <script src="SwupScrollPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r118/three.min.js"></script>
+    <script src="hover-effect.umd.js"></script>
+
     <script>
     // const options = {
     //   animateHistoryBrowsing: true;
