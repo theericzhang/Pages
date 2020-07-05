@@ -33,7 +33,7 @@ anime
     .add({
         targets: ".intro-title .letter",
         // translateX: [140, 0],
-        translateY: [100,50],
+        translateY: [200,0],
         translateZ: 0,
         scale: 1,
         opacity: [0, 1],
@@ -46,7 +46,7 @@ anime
     .add({
         targets: ".intro-title .letter",
         // translateX: [0, -140],
-        translateY: [50,0],
+        translateY: [0,-200],
         // translateZ: 0,
         scale: 1,
         opacity: [1, 0],
@@ -117,13 +117,18 @@ anime
 TweenMax.to(".preload", 2.2, {
     delay: 3,
     // top: "-100%",
-    opacity: "0",
-    ease: Expo.easeInOut
+    background: "#000",
+    opacity: "1",
+    scaleY: "0.50",
+    scaleX: "0.7",
+
+    // zIndex: "1",
+    ease: Expo.easeInOut,
 });
 
 TweenMax.to(".preload", 0.1, {
     delay: 5,
-    top: "-100%",
+    // top: "-100%",
 });
 
 if (TweenMax.isTweening(".preload")) {
