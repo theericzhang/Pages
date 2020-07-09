@@ -56,6 +56,28 @@ anime
             return 50 * i;
         }
     })
+
+    // .add({
+    //   targets: ".preload",
+    //   scaleY: "0.50",
+    //   scaleX: "0.7",
+
+    //   // marginLeft: "15vw",
+    //   // marginRight: "15vw",
+    //   // marginTop: "25vh",
+    //   // marginBottom: "25vh",
+    //   // margin: auto,
+    //   // zIndex: "3",
+    //   easing: 'easeInOutQuart',
+    //   duration: 1700,
+    // })
+    // .add({
+    //   targets: ".lz",
+    //   scaleY: "2",
+    //   scaleX: "1.4",
+    //   duration: 1,
+    // })
+    
     .add({
       targets: '#ericZ',
       translateY: [20,0],
@@ -90,6 +112,55 @@ anime
       offset: '-=300'
     })
     .add({
+      targets: '.hey',
+      translateY: [100, 0],
+      opacity: [0, 1],
+      easing: 'easeOutExpo',
+      duration: 1000,
+      delay: 600
+    })
+    .add({
+      targets: '.lz',
+      translateY: [100, 0],
+      opacity: [0, 1],
+      easing: 'easeOutExpo',
+      duration: 1000,
+      offset: '-=750'
+    })
+    .add({
+      targets: '.portraitPreview2',
+      translateY: [100, 0],
+      opacity: [0, 1],
+      easing: 'easeOutExpo',
+      duration: 1000,
+      offset: '-=750',
+      // delay: 600
+    })
+    .add({
+      targets: '#workh2',
+      translateY: [20,0],
+      opacity: [0,1],
+      easing: 'easeInExpo',
+      duration: 400,
+      offset: '-=300'
+    })
+    .add({
+      targets: '.workPreview',
+      translateY: [20,0],
+      opacity: [0,1],
+      easing: 'easeInExpo',
+      duration: 400,
+      offset: '-=300'
+    })
+    .add({
+      targets: '.columnLabel',
+      translateY: [20,0],
+      opacity: [0,1],
+      easing: 'easeInExpo',
+      duration: 400,
+      offset: '-=300'
+    })
+    .add({
       targets: '.menu-btn__burger',
       translateY: [20,0],
       opacity: [0,1],
@@ -117,19 +188,21 @@ anime
 TweenMax.to(".preload", 2.2, {
     delay: 3,
     // top: "-100%",
-    background: "#000",
-    opacity: "1",
-    scaleY: "0.50",
-    scaleX: "0.7",
+    // background: "#000",
+    opacity: "0",
+    // scaleY: "0.50",
+    // scaleX: "0.7",
 
-    // zIndex: "1",
+    // zIndex: "3",
     ease: Expo.easeInOut,
 });
 
 TweenMax.to(".preload", 0.1, {
     delay: 5,
-    // top: "-100%",
+    top: "-100%",
 });
+
+
 
 if (TweenMax.isTweening(".preload")) {
     // is tweening
@@ -152,9 +225,9 @@ if (TweenMax.isTweening(".preload")) {
 //     alert("hi");
 //     document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)"
 //     document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)"
-//     document.getElementById("ericZ").style.color = "#fff";
+//     document.getElementById("ericZ").style.color = "#edeee9";
 //     // document.body.backgroundColor = black;
-//     document.getElementById("menu-btn__burger").style.background = "#fff";
+//     document.getElementById("menu-btn__burger").style.background = "#edeee9";
 // }
 
 // if(document.URL.includes("index.html")){
@@ -167,9 +240,9 @@ aboutMe.addEventListener('click', () => {
     document.getElementById("myNav").style.height = "0%";
     document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)";
     document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)";
-    document.getElementById("ericZ").style.color = "#fff";
+    document.getElementById("ericZ").style.color = "#edeee9";
     // document.body.backgroundColor = black;
-    // document.getElementById("menu-burg").style.background = "#fff";
+    // document.getElementById("menu-burg").style.background = "#edeee9";
     document.documentElement.style.overflow = 'scroll';
     document.body.scroll = "yes";
     menuOpen = false;
@@ -180,9 +253,9 @@ myWork.addEventListener('click', () => {
     document.getElementById("myNav").style.height = "0%";
     document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)";
     document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)";
-    document.getElementById("ericZ").style.color = "#fff";
+    document.getElementById("ericZ").style.color = "#edeee9";
     // document.body.backgroundColor = black;
-    // document.getElementById("menu-burg").style.background = "#fff";
+    // document.getElementById("menu-burg").style.background = "#edeee9";
     document.documentElement.style.overflow = 'scroll';
     document.body.scroll = "yes";
     menuOpen = false;
@@ -195,8 +268,8 @@ function closeOverlay() {
         document.getElementById("myNav").style.height = "0%";
         document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)";
         document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)";
-        document.getElementById("ericZ").style.color = "#fff";
-        // document.getElementById("menu-btn__burger").style.background = "#fff";
+        document.getElementById("ericZ").style.color = "#edeee9";
+        // document.getElementById("menu-btn__burger").style.background = "#edeee9";
         document.documentElement.style.overflow = 'scroll';
         document.body.scroll = "yes";
         // document.body.style.backgroundColor = "#000"
@@ -204,8 +277,8 @@ function closeOverlay() {
     } else {
         menuBtn.classList.remove('open');
         document.getElementById("myNav").style.height = "0%";
-        document.getElementById("myNav").style.backgroundColor = "#FFF"
-        document.getElementById("navbar").style.backgroundColor = "#FFF"
+        document.getElementById("myNav").style.backgroundColor = "#edeee9"
+        document.getElementById("navbar").style.backgroundColor = "#edeee9"
         document.getElementById("ericZ").style.color = "#000";
         document.documentElement.style.overflow = 'scroll';
         document.body.scroll = "yes";
@@ -220,7 +293,7 @@ function openOverlay() {
     document.getElementById("myNav").style.height = "100%";
     document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)"
     document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)"
-    document.getElementById("ericZ").style.color = "#fff";
+    document.getElementById("ericZ").style.color = "#edeee9";
     document.documentElement.style.overflow = 'hidden';
     document.body.scroll = "no";
     menuOpen = true;
