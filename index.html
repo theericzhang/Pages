@@ -21,13 +21,24 @@
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="three.min.js"></script>
+    <script src="hover-effect.umd.js"></script>
 </head>
 
 <body>
     <!-- <script>
 		  window.scrollTo(0, 0);
 	</script> -->
-    <div class="preload">
+    <!-- <div class="preload"> -->
+    <!-- <marquee behavior="" direction="right" scrollamount="10">CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN </marquee>
+        <marquee behavior="" direction="left" scrollamount="30">CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN </marquee>
+        <marquee behavior="" direction="right" scrollamount="20">CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN </marquee>
+        <marquee behavior="" direction="left" scrollamount="40">CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN </marquee> -->
+    <!-- <div class="intro">
+            <h1 class="intro-title">ERIC ZHANG</h1>
+        </div>
+    </div> -->
+    <div class="preload" id="preloadID">
         <!-- <marquee behavior="" direction="right" scrollamount="10">CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN </marquee>
         <marquee behavior="" direction="left" scrollamount="30">CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN </marquee>
         <marquee behavior="" direction="right" scrollamount="20">CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN </marquee>
@@ -61,33 +72,73 @@
         </div>
     </div>
     <main id="swup" class="transition-fade">
-        <!-- Slider main container -->
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <img class="preview" src="/BARTmockup.png" alt="BART"></div>
-                <!-- <p>bruh</p> -->
-                <div class="swiper-slide">
-                    <img class="preview" src="https://lh3.googleusercontent.com/pw/ACtC-3cVQbKUTGdJI776pXeAOlNDNWJwWPAXJgjpvF2Zb9Wo2gXwH6fGffCLQ5KFN-GJD3X0UifGGDzY0sSb7f0WSWlwpd-jJvyft66P0B_0ILZajxJjvBD6RnhU6AAI6-ZSkd-ub4EGftt0viu7qCR31A1F=w1165-h733-no" alt="mbp2020">
+        <section id="hero">
+            <div class="row">
+                <div class="column">
+                    <h4 class="hey">Hey there!</h4>
+                    <p class="lz">I'm an Interaction + Experience Designer and Engineer living in the Bay Area!</p>
                 </div>
-                <div class="swiper-slide">
-                	<img class="preview" src="/17.jpg" alt="OOUI">
+                <div class="columnRightHome">
+                    <div class="portraitPreview2">
+                        <div class="canvas"></div>
+                    </div>
                 </div>
             </div>
-            <!-- <div class="swiper-pagination"></div> -->
-        </div>
-        <section id="container">
-            <div>
-                <button onclick="window.location.href = 'mailto:anericzhang@gmail.com';">lol dont press →</button>
-            </div>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</br></br>
-                The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their</p>
         </section>
+        <section id="containerWork">
+            <div class="rowWork">
+                <h2 id="workh2"></br>Work</h2>
+                <div class="cell">
+                    <a class="medium" href="https://medium.com/@theericzhang/ride-safe-ride-bart-cb4542c6daf0" target="_blank">
+                        <div class="workPreview" id="workPreviewID">
+                            <!-- <h4 class="caption">Restoring ridership in the Post-Pandemic Bay Area</h4> -->
+                        </div>
+                    </a>
+                    <div class="columnLabel">
+                        <p class="fields">UX/UI, Branding, Content Strategy, Research</p>
+                        <div class="menu-item">
+                            <div class="menu-item-wrapper" id="menu-item-wrapper-id">
+                                <div class="menu-arrow">
+                                    <ion-icon name="arrow-forward-sharp"></ion-icon>
+                                </div>
+                                <div class="menu-text">
+                                    <a class="medium" href="https://medium.com/@theericzhang/ride-safe-ride-bart-cb4542c6daf0" target="_blank">
+                                        <h3>Ride Safe, Ride BART: Restoring ridership in the Post-Pandemic Bay Area</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columnRight">
+                        <!-- Bruhuhuhuh -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="container"> -->
+        <!-- <p class="lz">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+
+The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their</p> -->
+        <!-- </section> -->
         <!-- Used for creating a carousel for the front page -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script>
+        if (document.URL.includes("index.html")) {
+
+            // alert("TWICE LOADED");
+        }
+
+        if (document.URL.includes("work.html")) {
+            document.getElementById("workPreviewID").onmouseover = function() {
+                // alert("chill bruh");
+                document.getElementById("menu-item-wrapper-id").style.left = 0;
+            }
+
+            document.getElementById("workPreviewID").onmouseout = function() {
+                document.getElementById("menu-item-wrapper-id").style.left = "-45px";
+            }
+        }
+
         var mySwiper = new Swiper('.swiper-container', {
             // Optional parameters
             pagination: {
@@ -109,52 +160,182 @@
             if (document.URL.includes("aboutme.html")) {
                 document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)";
                 document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)";
-                document.getElementById("ericZ").style.color = "#fff";
-                document.getElementById("menu-burg").style.color = "#fff";
-                document.getElementById("rightAbout").style.color = "#fff";
-                document.getElementById("rightWork").style.color = "#fff";
-                document.getElementById("rightContact").style.color = "#fff";
+                document.getElementById("ericZ").style.color = "#edeee9";
+                document.getElementById("menu-burg").style.color = "#edeee9";
+                document.getElementById("rightAbout").style.color = "#edeee9";
+                document.getElementById("rightWork").style.color = "#edeee9";
+                document.getElementById("rightContact").style.color = "#edeee9";
             } else {
-                document.getElementById("myNav").style.backgroundColor = "#FFF";
-                document.getElementById("navbar").style.backgroundColor = "#FFF";
+                document.getElementById("myNav").style.backgroundColor = "#edeee9";
+                document.getElementById("navbar").style.backgroundColor = "#edeee9";
                 document.getElementById("ericZ").style.color = "#000";
                 document.getElementById("rightAbout").style.color = "#000";
                 document.getElementById("rightWork").style.color = "#000";
                 document.getElementById("rightContact").style.color = "#000";
             }
             // }, 0);
+        });
 
+        document.addEventListener('swup:enabled', function() {
+            var myAnimation3 = new hoverEffect({
+                parent: document.querySelector('.portraitPreview2'),
+                intensity: 0.5,
+                speedIn: 0.8,
+                speedOut: 0.6,
+                angle: 5 * Math.PI / 4,
+                image1: '/imgs/EZ.png',
+                image2: '/imgs/ggbridge.png',
+                displacementImage: '/imgs/facade.jpg'
+            });
+
+            var myAnimation = new hoverEffect({
+                parent: document.querySelector('.workPreview'),
+                intensity: 0.5,
+                speedIn: 0.8,
+                speedOut: 0.6,
+                angle: 5 * Math.PI / 4,
+                image1: '/imgs/Scene.png',
+                image2: '/imgs/PosterMockup.png',
+                displacementImage: '/imgs/facade.jpg'
+            });
+
+            var myAnimation2 = new hoverEffect({
+                parent: document.querySelector('.portraitPreview'),
+                intensity: 0.5,
+                speedIn: 0.8,
+                speedOut: 0.6,
+                angle: 5 * Math.PI / 4,
+                image1: '/imgs/EZ.png',
+                image2: '/imgs/ggbridge.png',
+                displacementImage: '/imgs/facade.jpg'
+            });
         });
 
         document.addEventListener('swup:contentReplaced', function() {
-            var mySwiper = new Swiper('.swiper-container', {
-                // Optional parameters
-                pagination: {
-                    el: '.swiper-pagination',
-                    type: 'fraction',
-                },
-                autoplay: {
-                    delay: 4000,
-                    disableOnInteraction: false,
-                },
-                direction: 'horizontal',
-                loop: true,
-                updateOnWindowResize: true,
-
+            var myAnimation = new hoverEffect({
+                parent: document.querySelector('.workPreview'),
+                intensity: 0.5,
+                speedIn: 0.8,
+                speedOut: 0.6,
+                angle: 5 * Math.PI / 4,
+                image1: '/imgs/Scene.png',
+                image2: '/imgs/PosterMockup.png',
+                displacementImage: '/imgs/facade.jpg'
             });
+
+            var myAnimation2 = new hoverEffect({
+                parent: document.querySelector('.portraitPreview'),
+                intensity: 0.5,
+                speedIn: 0.8,
+                speedOut: 0.6,
+                angle: 5 * Math.PI / 4,
+                image1: '/imgs/EZ.png',
+                image2: '/imgs/ggbridge.png',
+                displacementImage: '/imgs/facade.jpg'
+            });
+
+            var myAnimation3 = new hoverEffect({
+                parent: document.querySelector('.portraitPreview2'),
+                intensity: 0.5,
+                speedIn: 0.8,
+                speedOut: 0.6,
+                angle: 5 * Math.PI / 4,
+                image1: '/imgs/EZ.png',
+                image2: '/imgs/ggbridge.png',
+                displacementImage: '/imgs/facade.jpg'
+            });
+
+            if (document.URL.includes("work.html")) {
+                document.getElementById("workPreviewID").onmouseover = function() {
+                    // alert("chill bruh");
+                    document.getElementById("menu-item-wrapper-id").style.left = 0;
+                }
+
+                document.getElementById("workPreviewID").onmouseout = function() {
+                    document.getElementById("menu-item-wrapper-id").style.left = "-45px";
+                }
+            }
+
+            var pID = document.getElementById("preloadID");
+            if (pID !== null) {
+                pID.remove();
+            }
+
+            //        TweenMax.to(".preload", 0, {
+            //     top: "-100%",
+            //     opacity: "0",
+            //     // scaleY: "0.50",
+            //     // scaleX: "0.7",
+            //     // zIndex: "2",
+            //     // ease: Expo.easeInOut,
+            // });
+            anime
+                .timeline({ loop: false })
+
+                .add({
+                    targets: '.hey',
+                    translateY: [100, 0],
+                    opacity: [0, 1],
+                    easing: 'easeOutExpo',
+                    duration: 1000,
+                    delay: 600
+                })
+                .add({
+                    targets: '.lz',
+                    translateY: [100, 0],
+                    opacity: [0, 1],
+                    easing: 'easeOutExpo',
+                    duration: 1000,
+                    offset: '-=750'
+                })
+                .add({
+                    targets: '.portraitPreview2',
+                    translateY: [100, 0],
+                    opacity: [0, 1],
+                    easing: 'easeOutExpo',
+                    duration: 1000,
+                    offset: '-=750'
+                    // delay: 600
+                })
+                .add({
+                    targets: '#workh2',
+                    translateY: [20, 0],
+                    opacity: [0, 1],
+                    easing: 'easeInExpo',
+                    duration: 400,
+                    offset: '-=300'
+                })
+                .add({
+                    targets: '.workPreview',
+                    translateY: [20, 0],
+                    opacity: [0, 1],
+                    easing: 'easeInExpo',
+                    duration: 400,
+                    offset: '-=300'
+                })
+                .add({
+                    targets: '.columnLabel',
+                    translateY: [20, 0],
+                    opacity: [0, 1],
+                    easing: 'easeInExpo',
+                    duration: 400,
+                    offset: '-=300'
+                })
+                .add({});
 
             anime
                 .timeline({ loop: false })
+
                 .add({
-                	targets: '#abouth2',
-                	translateY: [60, 0],
-                	opacity: [0, 1],
-                	easing: 'easeOutExpo',
-                	duration: 600,
-                	delay: 200
+                    targets: '#abouth2',
+                    translateY: [60, 0],
+                    opacity: [0, 1],
+                    easing: 'easeOutExpo',
+                    duration: 600,
+                    delay: 200
                 })
                 .add({
-                    targets: '.portrait',
+                    targets: '.portraitPreview',
                     translateY: [60, 0],
                     opacity: [0, 1],
                     easing: 'easeOutExpo',
@@ -172,14 +353,14 @@
                 .add({});
 
             anime
-            	.timeline({ loop: false })
-            	.add({
-                	targets: '#workh2',
-                	translateY: [60, 0],
-                	opacity: [0, 1],
-                	easing: 'easeOutExpo',
-                	duration: 600,
-                	delay: 600
+                .timeline({ loop: false })
+                .add({
+                    targets: '#workh2',
+                    translateY: [60, 0],
+                    opacity: [0, 1],
+                    easing: 'easeOutExpo',
+                    duration: 600,
+                    delay: 600
                 })
                 .add({
                     targets: '.workPreview',
@@ -206,7 +387,7 @@
                 //     offset: '-=500'
                 // })
                 .add({
-                	targets: '.columnLabel',
+                    targets: '.columnLabel',
                     translateY: [60, 0],
                     opacity: [0, 1],
                     easing: 'easeOutExpo',
@@ -215,25 +396,7 @@
                 })
                 .add({});
 
-            var myAnimation = new hoverEffect({
-		        parent: document.querySelector('.workPreview'),
-		        intensity: 0.5,
-		        speedIn: 0.8,
-		        speedOut: 0.6,
-		        angle: 5 * Math.PI / 4,
-		        image1: '/imgs/Scene.png',
-		        image2: '/imgs/PosterMockup.png',
-		        displacementImage: '/imgs/facade.jpg'
-		    });
 
-		    document.getElementById("workPreviewID").onmouseover = function () {
-		    	// alert("chill bruh");
-		    	document.getElementById("menu-item-wrapper-id").style.left = 0;
-		    }
-
-		    document.getElementById("workPreviewID").onmouseout = function () {
-		    	document.getElementById("menu-item-wrapper-id").style.left = "-45px"; 
-		    }
 
         });
         </script>
@@ -241,9 +404,6 @@
     <script src="app.js"></script>
     <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
     <script src="SwupScrollPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r118/three.min.js"></script>
-    <script src="hover-effect.umd.js"></script>
-
     <script>
     // const options = {
     //   animateHistoryBrowsing: true;
