@@ -76,7 +76,17 @@
             <div class="row">
                 <div class="column">
                     <h4 class="hey">Hey there!</h4>
-                    <p class="lz">I'm an Interaction + Experience Designer and Engineer living in the Bay Area!</p>
+                    <p class="lz">I'm an</p>
+                    <!-- <hr class="iam"> -->
+	                    <div class="wordContainer">
+		                    <p class="wordSwap" id="ixd">Interaction Designer</p>
+		                    <p class="wordSwap" id="uxd">Experience Designer</p>
+		                    <p class="wordSwap" id="eng">Engineer</p>
+		                    <p class="wordSwap" id="res">Empathetic Researcher</p>
+                            <p class="wordSwap" id="all">Interaction Designer,<br>Experience Designer,</br>Engineer,</br>& Empathetic Researcher.</p>
+		                </div>
+                    <!-- <p class="lz"></p> -->
+
                 </div>
                 <div class="columnRightHome">
                     <div class="portraitPreview2">
@@ -85,9 +95,16 @@
                 </div>
             </div>
         </section>
+        
+        <video class="demoreel" id="demoReelmp4" autoplay muted loop playsinline>
+              <source src="/imgs/demoreel.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+
         <section id="containerWork">
+
             <div class="rowWork">
-                <h2 id="workh2"></br>Work</h2>
+                <h2 id="workh2"></br>Selected Work</h2>
                 <div class="cell">
                     <a class="medium" href="https://medium.com/@theericzhang/ride-safe-ride-bart-cb4542c6daf0" target="_blank">
                         <div class="workPreview" id="workPreviewID">
@@ -209,6 +226,8 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
                 image2: '/imgs/ggbridge.png',
                 displacementImage: '/imgs/facade.jpg'
             });
+
+            // document.getElementById(demoReelmp4).play();
         });
 
         document.addEventListener('swup:contentReplaced', function() {
@@ -245,6 +264,8 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
                 displacementImage: '/imgs/facade.jpg'
             });
 
+
+
             if (document.URL.includes("work.html")) {
                 document.getElementById("workPreviewID").onmouseover = function() {
                     // alert("chill bruh");
@@ -273,29 +294,46 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
                 .timeline({ loop: false })
 
                 .add({
-                    targets: '.hey',
-                    translateY: [100, 0],
-                    opacity: [0, 1],
-                    easing: 'easeOutExpo',
-                    duration: 1000,
-                    delay: 600
-                })
+			      targets: '.hey',
+			      translateY: [100, 0],
+			      opacity: [0, 1],
+			      easing: 'easeOutExpo',
+			      duration: 1000,
+			      delay: 600
+			    })
+			    .add({
+			      targets: '.lz',
+			      translateY: [100, 0],
+			      opacity: [0, 1],
+			      easing: 'easeOutExpo',
+			      duration: 1000,
+			      offset: '-=900'
+			    })
                 .add({
-                    targets: '.lz',
-                    translateY: [100, 0],
-                    opacity: [0, 1],
-                    easing: 'easeOutExpo',
-                    duration: 1000,
-                    offset: '-=750'
+                  targets: '#all',
+                  translateY: [100, 0],
+                  opacity: [0, 1],
+                  easing: 'easeOutExpo',
+                  duration: 1000,
+                  offset: '-=900'
                 })
+			    .add({
+			      targets: '.portraitPreview2',
+			      translateY: [100, 0],
+			      // translateZ: [-80, 0],
+			      opacity: [0, 1],
+			      easing: 'easeOutExpo',
+			      duration: 1000,
+			      offset: '-=900',
+			      // delay: 600
+			    })
                 .add({
-                    targets: '.portraitPreview2',
-                    translateY: [100, 0],
-                    opacity: [0, 1],
-                    easing: 'easeOutExpo',
-                    duration: 1000,
-                    offset: '-=750'
-                    // delay: 600
+                  targets: '#hero',
+                  height: ["100vh", "80vh"],
+                  easing: 'easeInOutQuart',
+                  duration: 1000,
+                  offset: '-=900',
+                  delay: 400
                 })
                 .add({
                     targets: '#workh2',
@@ -397,7 +435,7 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
                 .add({});
 
 
-
+        document.getElementById(demoReelmp4).play();
         });
         </script>
     </main>

@@ -79,6 +79,110 @@ anime
     // })
     
     .add({
+      targets: '.hey',
+      translateY: [100, 0],
+      opacity: [0, 1],
+      easing: 'easeOutExpo',
+      duration: 1000,
+      delay: 600
+    })
+    .add({
+      targets: ".lz",
+      translateY: [100, 0],
+      opacity: [0, 1],
+      easing: 'easeOutExpo',
+      duration: 1000,
+      offset: '-=900'
+    })
+    .add({
+      targets: '#ixd',
+      translateY: [100, 0],
+      opacity: [0, 1],
+      easing: 'easeOutExpo',
+      duration: 1000,
+      offset: '-=900'
+    })
+    .add({
+      targets: '.portraitPreview2',
+      translateY: [100, 0],
+      perspective: [-100, 0],
+      opacity: [0, 1],
+      // scale: [1.1, 1],
+      easing: 'easeInOutQuart',
+      duration: 1000,
+      offset: '-=900',
+      // delay: 600
+    })
+    .add({
+      targets: '#ixd',
+      translateY: [0, -25],
+      opacity: [1, 0],
+      easing: 'easeInOutQuart',
+      duration: 600,
+      // offset: '-=900',
+      delay: 100
+    })
+    .add({
+      targets: '#uxd',
+      translateY: [25, 0],
+      opacity: [0, 1],
+      easing: 'easeInOutQuart',
+      duration: 600,
+      // offset: '-=900'
+    })
+    .add({
+      targets: '#uxd',
+      translateY: [0, -25],
+      opacity: [1, 0],
+      easing: 'easeInOutQuart',
+      duration: 600,
+      // offset: '-=900',
+      delay: 100
+    })
+    .add({
+      targets: '#eng',
+      translateY: [25, 0],
+      opacity: [0, 1],
+      easing: 'easeOutExpo',
+      duration: 600,
+      // offset: '-=900'
+    })
+    .add({
+      targets: '#eng',
+      translateY: [0, -25],
+      opacity: [1, 0],
+      easing: 'easeOutExpo',
+      duration: 600,
+      // offset: '-=900',
+      delay: 100
+    })
+    .add({
+      targets: '#res',
+      translateY: [25, 0],
+      opacity: [0, 1],
+      easing: 'easeOutExpo',
+      duration: 600,
+      // offset: '-=900'
+    })
+    .add({
+      targets: '#res',
+      translateY: [0, -25],
+      opacity: [1, 0],
+      easing: 'easeOutExpo',
+      duration: 600,
+      // offset: '-=900',
+      delay: 100
+    })
+    //display all
+    .add({
+      targets: '#all',
+      translateY: [25, 0],
+      opacity: [0, 1],
+      easing: 'easeOutExpo',
+      duration: 600
+    })
+
+    .add({
       targets: '#ericZ',
       translateY: [20,0],
       opacity: [0,1],
@@ -111,31 +215,10 @@ anime
       duration: 400,
       offset: '-=300'
     })
-    .add({
-      targets: '.hey',
-      translateY: [100, 0],
-      opacity: [0, 1],
-      easing: 'easeOutExpo',
-      duration: 1000,
-      delay: 600
-    })
-    .add({
-      targets: '.lz',
-      translateY: [100, 0],
-      opacity: [0, 1],
-      easing: 'easeOutExpo',
-      duration: 1000,
-      offset: '-=750'
-    })
-    .add({
-      targets: '.portraitPreview2',
-      translateY: [100, 0],
-      opacity: [0, 1],
-      easing: 'easeOutExpo',
-      duration: 1000,
-      offset: '-=750',
-      // delay: 600
-    })
+
+    
+
+    
     .add({
       targets: '#workh2',
       translateY: [20,0],
@@ -168,6 +251,16 @@ anime
       duration: 400,
       offset: '-=600'
     })
+    
+    .add({
+      targets: '#hero',
+      height: ["100vh", "80vh"],
+      easing: 'easeInOutQuart',
+      duration: 1000,
+      offset: '-=600',
+      // delay: 2000
+    })
+
     // .add({
     //   targets: '.preview',
     //   translateY: [20,0],
