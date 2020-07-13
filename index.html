@@ -73,30 +73,19 @@
     </div>
     <main id="swup" class="transition-fade">
         <section id="hero">
-            <div class="row">
-                <div class="column">
-                    <h4 class="hey">Hey there!</h4>
-                    <p class="lz">I'm an</p>
-                    <!-- <hr class="iam"> -->
-	                    <div class="wordContainer">
-		                    <p class="wordSwap" id="ixd">Interaction Designer</p>
-		                    <p class="wordSwap" id="uxd">Experience Designer</p>
-		                    <p class="wordSwap" id="eng">Engineer</p>
-		                    <p class="wordSwap" id="res">Empathetic Researcher</p>
-                            <p class="wordSwap" id="all">Interaction Designer,<br>Experience Designer,</br>Engineer,</br>& Empathetic Researcher.</p>
-		                </div>
-                    <!-- <p class="lz"></p> -->
-
-                </div>
-                <div class="columnRightHome">
-                    <div class="portraitPreview2">
-                        <div class="canvas"></div>
-                    </div>
+            <div class="alignbottom">
+                <div class="wordContainer">
+                    <div class="wordSwap" id="res">Researcher</div>
+                    <div class="wordSwap" id="uxd">Designer</div>
+                    <div class="wordSwap" id="eng">Engineer</div>
+                    <div class="wordSwapDiv" id="all">Researcher, Designer, & Engineer</div>
                 </div>
             </div>
+                
         </section>
+
         
-        <video class="demoreel" id="demoReelmp4" autoplay muted loop playsinline>
+        <video class="demoreel" id="demoReelmp4" preload autoplay muted loop playsinline>
               <source src="/imgs/demoreel.mp4" type="video/mp4">
             Your browser does not support the video tag.
             </video>
@@ -329,7 +318,7 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
 			    })
                 .add({
                   targets: '#hero',
-                  height: ["100vh", "80vh"],
+                  height: ["100vh", "60vh"],
                   easing: 'easeInOutQuart',
                   duration: 1000,
                   offset: '-=900',
@@ -435,7 +424,7 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
                 .add({});
 
 
-        document.getElementById(demoReelmp4).play();
+        document.getElementById("demoReelmp4").play();
         });
         </script>
     </main>

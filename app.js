@@ -123,11 +123,30 @@ anime
       delay: 100
     })
     .add({
+      targets: '#res',
+      translateY: [25, 0],
+      opacity: [0, 1],
+      easing: 'easeOutExpo',
+      duration: 600,
+      // delay: 500
+      // offset: '-=900'
+    })
+    .add({
+      targets: '#res',
+      translateY: [0, -25],
+      opacity: [1, 0],
+      easing: 'easeOutExpo',
+      duration: 600,
+      // offset: '-=900',
+      delay: 100
+    })
+    .add({
       targets: '#uxd',
       translateY: [25, 0],
       opacity: [0, 1],
       easing: 'easeInOutQuart',
       duration: 600,
+      // delay: 500
       // offset: '-=900'
     })
     .add({
@@ -145,27 +164,11 @@ anime
       opacity: [0, 1],
       easing: 'easeOutExpo',
       duration: 600,
+      // delay: 500
       // offset: '-=900'
     })
     .add({
       targets: '#eng',
-      translateY: [0, -25],
-      opacity: [1, 0],
-      easing: 'easeOutExpo',
-      duration: 600,
-      // offset: '-=900',
-      delay: 100
-    })
-    .add({
-      targets: '#res',
-      translateY: [25, 0],
-      opacity: [0, 1],
-      easing: 'easeOutExpo',
-      duration: 600,
-      // offset: '-=900'
-    })
-    .add({
-      targets: '#res',
       translateY: [0, -25],
       opacity: [1, 0],
       easing: 'easeOutExpo',
@@ -254,7 +257,7 @@ anime
     
     .add({
       targets: '#hero',
-      height: ["100vh", "80vh"],
+      height: ["100vh", "60vh"],
       easing: 'easeInOutQuart',
       duration: 1000,
       offset: '-=600',

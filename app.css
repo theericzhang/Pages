@@ -71,7 +71,166 @@ html {
         url('fonts/brandon_reg-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'Apercu Mono Pro';
+    src: url('fonts/ApercuMonoPro-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('fonts/ApercuPro-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('fonts/ApercuPro-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('fonts/ApercuPro-BlackItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('fonts/ApercuPro-ExtraBoldItalic.woff2') format('woff2');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Mono Pro';
+    src: url('fonts/ApercuMonoPro-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('fonts/ApercuPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Mono Pro';
+    src: url('fonts/ApercuMonoPro-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('fonts/ApercuPro-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('fonts/ApercuPro-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('fonts/ApercuPro-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('fonts/ApercuPro-LightItalic.woff2') format('woff2');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('fonts/ApercuPro-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('fonts/ApercuPro-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('fonts/ApercuPro-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('fonts/ApercuPro-ExtraLightItalic.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('fonts/ApercuPro-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('fonts/ApercuPro-ThinItalic.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Pro';
+    src: url('fonts/ApercuPro-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apercu Mono Pro';
+    src: url('fonts/ApercuMonoPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 .transition-fade {
@@ -79,6 +238,7 @@ html {
     -webkit-transition: 400ms;
     /*transition-timing-function: ease-out;*/
     background-color: #edeee9;
+    /*width: 100vw;*/
     /*position: top;*/
 }
 
@@ -363,9 +523,10 @@ hr.solid {
 
 #navinner {
 	align-items: center;
-	max-width: 1248px;
-	margin-left: auto;
-	margin-right: auto;
+	/*max-width: 1248px;*/
+	margin-left: 40px;
+	margin-right: 40px;
+
 }
 
 #navbar {
@@ -373,10 +534,10 @@ hr.solid {
     -webkit-transition: 0.4s;
     position: fixed;
     top: 0px;
-    width: 100%;
+    width: 100vw;
     /*transition: top 0.4s;*/
     z-index: 3;
-    /*padding: 0;*/
+    /*padding: 0px 40px;*/
     /*margin: 0;*/
     /*overflow-x: hidden;*/
 }
@@ -404,7 +565,7 @@ hr.solid {
     color: #000;
     text-align: center;
     justify-content: center;
-    padding: 25px 15px;
+    padding: 32px 15px;
     padding-bottom: 10px;
     margin-right: 10px;
     text-decoration: none;
@@ -412,7 +573,7 @@ hr.solid {
     /*font-family: neue-haas-unica;
     font-weight: 400;
     font-style: normal;*/
-    font-family: brandon-grotesque,sans-serif;
+    font-family: 'Apercu Mono Pro';
 	font-weight: 700;
 	font-style: normal;
     transition: 0.4s;
@@ -658,11 +819,12 @@ h1 {
 
 p.pAbout {
     max-width: 600px;
-    font-family: 'brandon_grotesqueregular';
+    font-family: 'brandon-grotesque';
     font-size: 22px;
     font-weight: normal;
     color: #edeee9;
     margin-left: 16px;
+    margin-top: 0;
     /*text-align: center;*/
 
     /*vertical-align: center;*/
@@ -704,16 +866,25 @@ p.pAbout {
 	display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-end;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     /*padding-top: 82px;*/
-    padding: 0px 16px;
+    /*padding: 0px 40px;*/
     background-color: #edeee9;
-    max-width: 1248px;
+    /*max-width: 1248px;*/
     margin-left: auto;
     margin-right: auto;
 }
+
+/*.alignbottom {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+
+}*/
 
 
 /* Clear floats after the columns */
@@ -943,20 +1114,50 @@ p {
 
 .wordSwap {
 	color: black;
-	font-size: 60px;
-	font-weight: 600;
+	font-size: 70px;
+    font-family: 'Apercu Mono Pro';
+	font-weight: normal;
+    font-style: normal;
 	text-align: left;
 	/*align-content: center;*/
-	padding: 15px 10px;
+	padding: 15px 40px;
 	margin-top: 0px;
+    margin-bottom: 0px;
+    /*vertical-align: bottom;*/
 	position: absolute;
     line-height: 60px;
+    align-items: flex-end;
+    justify-content: left;
+    max-width: none;
+}
+
+.wordSwapDiv {
+    color: black;
+    font-size: 70px;
+    font-family: 'Apercu Mono Pro';
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    /*align-content: center;*/
+    padding: 15px 40px;
+    /*margin-top: 0px;
+    margin-bottom: 0px;*/
+    /*vertical-align: bottom;*/
+    /*position: absolute;*/
+    line-height: 60px;
+    /*align-items: flex-end;*/
+    justify-content: left;
+    max-width: none;
 }
 
 .wordContainer {
 	position: relative;
+    /*text-align: bottom;*/
     /*margin-top: -50px;*/
 	width: 100%;
+    margin-bottom: 2%;
+
+
 }
 
 #all {
@@ -969,7 +1170,7 @@ h2 {
     text-align: left;
     padding: 0px 0px;
     /*margin-top: 82px;*/
-    font-family: 'neue-haas-unica';
+    font-family: 'ApercuMonoPro-Regular';
     font-size: 35px;
     line-height: 2;
 }
@@ -1056,8 +1257,7 @@ ion-icon {
     background-color: black;
 
 
-    font-family: neue-haas-unica, sans-serif;
-    font-weight: 800;
+    
     font-style: normal;
     text-decoration: none;
     /*font-size: 22px;*/
