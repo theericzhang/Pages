@@ -85,7 +85,7 @@
         </section>
 
         
-        <video class="demoreel" id="demoReelmp4" preload autoplay muted loop playsinline>
+        <video class="demoreel" id="demoReelmp4" preload="auto" autoplay muted loop playsinline>
               <source src="/imgs/demoreel.mp4" type="video/mp4">
             Your browser does not support the video tag.
             </video>
@@ -269,6 +269,21 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
             var pID = document.getElementById("preloadID");
             if (pID !== null) {
                 pID.remove();
+            }
+
+            var res = document.getElementById("res");
+            if (res !== null) {
+                res.remove();
+            }
+
+            var uxd = document.getElementById("uxd");
+            if (uxd !== null) {
+                uxd.remove();
+            }
+
+            var eng = document.getElementById("eng");
+            if (eng !== null) {
+                eng.remove();
             }
 
             //        TweenMax.to(".preload", 0, {

@@ -1120,9 +1120,9 @@ p {
     font-style: normal;
 	text-align: left;
 	/*align-content: center;*/
-	padding: 15px 40px;
+	padding: 15px 50px;
 	margin-top: 0px;
-    margin-bottom: 0px;
+    /*margin-bottom: 0px;*/
     /*vertical-align: bottom;*/
 	position: absolute;
     line-height: 60px;
@@ -1139,7 +1139,7 @@ p {
     font-style: normal;
     text-align: left;
     /*align-content: center;*/
-    padding: 15px 40px;
+    padding: 15px 50px;
     /*margin-top: 0px;
     margin-bottom: 0px;*/
     /*vertical-align: bottom;*/
