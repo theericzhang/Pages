@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 </head>
 
 <body id="aboutBody" style="background-color: black">
@@ -33,102 +34,209 @@
             <hr class="solid">
         </div>
     </div>
-    <main id="swup" class="transition-fadeAbout">       
+    <main id="swup" class="transition-fadeAbout">
         <section id="containerAbout">
-        	
-        	<div class="row">
-        		<h2 id="abouth2"></br>About Me</h2>
-        		<div class="column">
-        			<div class="portraitPreview">
-        				<div class="canvas"></div>
-        			</div>
-        			<!-- <img class="portrait" src="/imgs/EZ.png"> -->
-        		</div>
-        		<div class="columnRight">
-        			<p id="pAboutFade" class="pAbout">
-	                I’m a researcher, designer, and engineer who’s dedicated to shaping engaging products.</br>
-	                </br>
-	                As a self motivated end-to-end experience designer, I’m always on the lookout to exercise user centered design and design thinking on a wide breadth of products.</br>
-	                </br>
-	                User empathy grounds my understandings.</br>
-	                Synthesized research intrigues me.</br>
-	                Ideation inspires and challenges me.</br>
-	                Testing validates my hypothesis.</br>
-	                </br>
-	                Held together by a strong drive to grow with my team, I see it as a priority to uplift fellow team members and learn from them.</br></br>
-	                When I have an idea, I’ll figure out a way to bring it to life.</br></br>
-	                As an enthusiastic engineer, I’ll go the extra mile with my work. With a vast understanding of front end and back end technologies wrapped in a drive to learn even more, I have the utmost confidence in bringing a concept to life.</br></br>
-	                When I’ve brought it to life, I’ll take a moment to recharge.</br></br>
-	                I’m a competitive Dance Dance Revolution player. I’m a human rights activist. I’m a traveller. I’m a cook. I’m a friend.</br></br>
-	                Want to know more about me?
-            </p>
-        		</div>
-        	</div>
+            <div class="row">
+                <h2 id="abouth2"></br>Hey there!</h2>
+                <div class="column">
+                    <div class="portraitPreview">
+                        <div class="canvas"></div>
+                    </div>
+                    <!-- <img class="portrait" src="/imgs/EZ.png"> -->
+                    <div class="links">
+                        <hr class="divider" style="width:45px;text-align:left;margin-top:20px;margin-left:0px;border:2px solid #edeee9;">
+                        <a href="https://github.com/theericzhang" target="_blank">
+                            <div class="vCard" style="padding: 0px 0px;">
+                                <div class="menu-item-about">
+                                    <div class="menu-item-wrapper" id="menu-item-wrapper-id">
+                                        <div class="menu-arrow">
+                                            <ion-icon class="iconAbout" name="arrow-forward-circle"></ion-icon>
+                                        </div>
+                                        <div class="menu-text">
+                                            <a class="social" href="https://github.com/theericzhang" target="_blank">GitHub</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/anericzhang/" target="_blank">
+                            <div class="vCard" style="padding: 0px 0px;">
+                                <div class="menu-item-about">
+                                    <div class="menu-item-wrapper" id="menu-item-wrapper-id">
+                                        <div class="menu-arrow">
+                                            <ion-icon class="iconAbout" name="arrow-forward-circle"></ion-icon>
+                                        </div>
+                                        <div class="menu-text">
+                                            <a class="social" href="https://www.linkedin.com/in/anericzhang/" target="_blank">LinkedIn</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.are.na/yg_pbhndcai/na-lfn7zrtobro" target="_blank">
+                            <div class="vCard" style="padding: 0px 0px;">
+                                <div class="menu-item-about">
+                                    <div class="menu-item-wrapper" id="menu-item-wrapper-id">
+                                        <div class="menu-arrow">
+                                            <ion-icon class="iconAbout" name="arrow-forward-circle"></ion-icon>
+                                        </div>
+                                        <div class="menu-text">
+                                            <a class="social" href="https://www.are.na/yg_pbhndcai/na-lfn7zrtobro" target="_blank">Are.na</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/z_ericeric" target="_blank">
+                            <div class="vCard" style="padding: 0px 0px;">
+                                <div class="menu-item-about">
+                                    <div class="menu-item-wrapper" id="menu-item-wrapper-id">
+                                        <div class="menu-arrow">
+                                            <ion-icon class="iconAbout" name="arrow-forward-circle"></ion-icon>
+                                        </div>
+                                        <div class="menu-text">
+                                            <a class="social" href="https://twitter.com/z_ericeric" target="_blank">Twitter</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="columnRight">
+                    <p id="pAboutFade" class="pAbout">
+                        I’m a researcher, designer, and engineer based in the Bay Area who’s dedicated to shaping engaging products.</br>
+                        </br>
+                        As a self motivated end-to-end experience designer, I’m always on the lookout to exercise user centered design and design thinking on a wide breadth of products.</br>
+                        </br>
+                        User empathy grounds my understandings.</br>
+                        Synthesized research intrigues me.</br>
+                        Ideation inspires and challenges me.</br>
+                        Testing validates my hypothesis.</br>
+                        </br>
+                        Held together by a strong drive to grow with my team, I see it as a priority to uplift fellow team members and learn from them.</br></br>
+                        When I have an idea, I’ll figure out a way to bring it to life.</br></br>
+                        As an enthusiastic engineer, I’ll go the extra mile with my work. With a vast understanding of front end and back end technologies wrapped in a drive to learn even more, I have the utmost confidence in bringing a concept to life.</br></br>
+                        When I’ve brought it to life, I’ll take a moment to recharge.</br></br>
+                        I’m a competitive Dance Dance Revolution player. I’m a human rights activist. I’m a traveller. I’m a cook. I’m a friend.</br></br>
+                        Want to know more about me?
+                    </p>
+                    <!-- <hr style="width:10%;text-align:left;margin-left:16px;border:2px solid #edeee9;">
+                    <div class="vCard" style="padding: 0px 5px;">
+                        <div class="menu-item-about">
+                            <div class="menu-item-wrapper" id="menu-item-wrapper-id">
+                                <div class="menu-arrow">
+                                    <ion-icon class="iconAbout" name="arrow-forward-circle"></ion-icon>
+                                </div>
+                                <div class="menu-text">
+                                    <a class="social" href="https://github.com/theericzhang" target="_blank">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vCard" style="padding: 0px 5px;">
+                        <div class="menu-item-about">
+                            <div class="menu-item-wrapper" id="menu-item-wrapper-id">
+                                <div class="menu-arrow">
+                                    <ion-icon class="iconAbout" name="arrow-forward-circle"></ion-icon>
+                                </div>
+                                <div class="menu-text">
+                                    <a class="social" href="https://www.linkedin.com/in/anericzhang/" target="_blank">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vCard" style="padding: 0px 5px;">
+                        <div class="menu-item-about">
+                            <div class="menu-item-wrapper" id="menu-item-wrapper-id">
+                                <div class="menu-arrow">
+                                    <ion-icon class="iconAbout" name="arrow-forward-circle"></ion-icon>
+                                </div>
+                                <div class="menu-text">
+                                    <a class="social" href="https://www.are.na/yg_pbhndcai/na-lfn7zrtobro" target="_blank">Are.na</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vCard" style="padding: 0px 5px;">
+                        <div class="menu-item-about">
+                            <div class="menu-item-wrapper" id="menu-item-wrapper-id">
+                                <div class="menu-arrow">
+                                    <ion-icon class="iconAbout" name="arrow-forward-circle"></ion-icon>
+                                </div>
+                                <div class="menu-text">
+                                    <a class="social" href="https://twitter.com/z_ericeric" target="_blank">Twitter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
         </section>
         <script>
-        	anime
-        		.timeline({ loop: false})
-        		.add({
-			      targets: '.pAbout',
-			      translateY: [20,0],
-			      opacity: [0,1],
-			      easing: 'easeInExpo',
-			      duration: 400,
-			      delay: 0
-			    })
-			    .add({
-			      targets: '#abouth2',
-			      translateY: [20,0],
-			      opacity: [0,1],
-			      easing: 'easeInExpo',
-			      duration: 400,
-			      delay: 0
-			    })
-			    .add({
-			      targets: '.portrait',
-			      translateY: [20,0],
-			      opacity: [0,1],
-			      easing: 'easeInExpo',
-			      duration: 400,
-			      delay: 0
-			    })
-			    .add({
+        anime
+            .timeline({ loop: false })
+            .add({
+                targets: '.pAbout',
+                translateY: [20, 0],
+                opacity: [0, 1],
+                easing: 'easeInExpo',
+                duration: 400,
+                delay: 0
+            })
+            .add({
+                targets: '#abouth2',
+                translateY: [20, 0],
+                opacity: [0, 1],
+                easing: 'easeInExpo',
+                duration: 400,
+                delay: 0
+            })
+            .add({
+                targets: '.portrait',
+                translateY: [20, 0],
+                opacity: [0, 1],
+                easing: 'easeInExpo',
+                duration: 400,
+                delay: 0
+            })
+            .add({
 
-			    });
-        	
+            });
 
-			document.addEventListener('swup:contentReplaced', function() {
-		            // alert("bruhhh");
-		            anime
-			    		.timeline({ loop: false })
-					    .add({
-					      targets: '.pAbout',
-					      translateY: [20,0],
-					      opacity: [0,1],
-					      easing: 'easeInExpo',
-					      duration: 400,
-					      delay: 2000
-					    })
-					    .add({
-					      targets: '.portrait',
-					      translateY: [20,0],
-					      opacity: [0,1],
-					      easing: 'easeInExpo',
-					      duration: 400,
-					      delay: 2000
-					    })
-					    .add({
-					      targets: '#pAboutFade',
-					      translateY: [20,0],
-					      opacity: [0,1],
-					      easing: 'easeInExpo',
-					      duration: 400,
-					      delay: 2000
-					    })
-					    .add({
 
-					    });
-			    });    
+        document.addEventListener('swup:contentReplaced', function() {
+            // alert("bruhhh");
+            anime
+                .timeline({ loop: false })
+                .add({
+                    targets: '.pAbout',
+                    translateY: [20, 0],
+                    opacity: [0, 1],
+                    easing: 'easeInExpo',
+                    duration: 400,
+                    delay: 2000
+                })
+                .add({
+                    targets: '.portrait',
+                    translateY: [20, 0],
+                    opacity: [0, 1],
+                    easing: 'easeInExpo',
+                    duration: 400,
+                    delay: 2000
+                })
+                .add({
+                    targets: '#pAboutFade',
+                    translateY: [20, 0],
+                    opacity: [0, 1],
+                    easing: 'easeInExpo',
+                    duration: 400,
+                    delay: 2000
+                })
+                .add({
+
+                });
+        });
 
         // 	document.getElementById("myNav").style.backgroundColor = "rgba(0,0,0,1)";
         //     document.getElementById("navbar").style.backgroundColor = "rgba(0,0,0,1)";
