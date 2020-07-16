@@ -33,7 +33,7 @@ anime
     .add({
         targets: ".intro-title .letter",
         // translateX: [140, 0],
-        translateY: [200,0],
+        translateY: [200, 0],
         translateZ: 0,
         scale: 1,
         opacity: [0, 1],
@@ -46,7 +46,7 @@ anime
     .add({
         targets: ".intro-title .letter",
         // translateX: [0, -140],
-        translateY: [0,-200],
+        translateY: [0, -200],
         // translateZ: 0,
         scale: 1,
         opacity: [1, 0],
@@ -77,191 +77,191 @@ anime
     //   scaleX: "1.4",
     //   duration: 1,
     // })
-    
+
     .add({
-      targets: '.hey',
-      translateY: [100, 0],
-      opacity: [0, 1],
-      easing: 'easeOutExpo',
-      duration: 1000,
-      delay: 600
+        targets: '.hey',
+        translateY: [100, 0],
+        opacity: [0, 1],
+        easing: 'easeOutExpo',
+        duration: 1000,
+        delay: 600
     })
     .add({
-      targets: ".lz",
-      translateY: [100, 0],
-      opacity: [0, 1],
-      easing: 'easeOutExpo',
-      duration: 1000,
-      offset: '-=900'
+        targets: ".lz",
+        translateY: [100, 0],
+        opacity: [0, 1],
+        easing: 'easeOutExpo',
+        duration: 1000,
+        offset: '-=900'
     })
     .add({
-      targets: '#ixd',
-      translateY: [100, 0],
-      opacity: [0, 1],
-      easing: 'easeOutExpo',
-      duration: 1000,
-      offset: '-=900'
+        targets: '#ixd',
+        translateY: [100, 0],
+        opacity: [0, 1],
+        easing: 'easeOutExpo',
+        duration: 1000,
+        offset: '-=900'
     })
     .add({
-      targets: '.portraitPreview2',
-      translateY: [100, 0],
-      perspective: [-100, 0],
-      opacity: [0, 1],
-      // scale: [1.1, 1],
-      easing: 'easeInOutQuart',
-      duration: 1000,
-      offset: '-=900',
-      // delay: 600
+        targets: '.portraitPreview2',
+        translateY: [100, 0],
+        perspective: [-100, 0],
+        opacity: [0, 1],
+        // scale: [1.1, 1],
+        easing: 'easeInOutQuart',
+        duration: 1000,
+        offset: '-=900',
+        // delay: 600
     })
     .add({
-      targets: '#ixd',
-      translateY: [0, -25],
-      opacity: [1, 0],
-      easing: 'easeInOutQuart',
-      duration: 600,
-      // offset: '-=900',
-      delay: 100
+        targets: '#ixd',
+        translateY: [0, -25],
+        opacity: [1, 0],
+        easing: 'easeInOutQuart',
+        duration: 600,
+        // offset: '-=900',
+        delay: 100
     })
     .add({
-      targets: '#res',
-      translateY: [25, 0],
-      opacity: [0, 1],
-      easing: 'easeOutExpo',
-      duration: 600,
-      // delay: 500
-      // offset: '-=900'
+        targets: '#res',
+        translateY: [25, 0],
+        opacity: [0, 1],
+        easing: 'easeOutExpo',
+        duration: 600,
+        // delay: 500
+        // offset: '-=900'
     })
     .add({
-      targets: '#res',
-      translateY: [0, -25],
-      opacity: [1, 0],
-      easing: 'easeOutExpo',
-      duration: 600,
-      // offset: '-=900',
-      delay: 100
+        targets: '#res',
+        translateY: [0, -25],
+        opacity: [1, 0],
+        easing: 'easeOutExpo',
+        duration: 600,
+        // offset: '-=900',
+        delay: 100
     })
     .add({
-      targets: '#uxd',
-      translateY: [25, 0],
-      opacity: [0, 1],
-      easing: 'easeInOutQuart',
-      duration: 600,
-      // delay: 500
-      // offset: '-=900'
+        targets: '#uxd',
+        translateY: [25, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutQuart',
+        duration: 600,
+        // delay: 500
+        // offset: '-=900'
     })
     .add({
-      targets: '#uxd',
-      translateY: [0, -25],
-      opacity: [1, 0],
-      easing: 'easeInOutQuart',
-      duration: 600,
-      // offset: '-=900',
-      delay: 100
+        targets: '#uxd',
+        translateY: [0, -25],
+        opacity: [1, 0],
+        easing: 'easeInOutQuart',
+        duration: 600,
+        // offset: '-=900',
+        delay: 100
     })
     .add({
-      targets: '#eng',
-      translateY: [25, 0],
-      opacity: [0, 1],
-      easing: 'easeOutExpo',
-      duration: 600,
-      // delay: 500
-      // offset: '-=900'
+        targets: '#eng',
+        translateY: [25, 0],
+        opacity: [0, 1],
+        easing: 'easeOutExpo',
+        duration: 600,
+        // delay: 500
+        // offset: '-=900'
     })
     .add({
-      targets: '#eng',
-      translateY: [0, -25],
-      opacity: [1, 0],
-      easing: 'easeOutExpo',
-      duration: 600,
-      // offset: '-=900',
-      delay: 100
+        targets: '#eng',
+        translateY: [0, -25],
+        opacity: [1, 0],
+        easing: 'easeOutExpo',
+        duration: 600,
+        // offset: '-=900',
+        delay: 100
     })
     //display all
     .add({
-      targets: '#all',
-      translateY: [25, 0],
-      opacity: [0, 1],
-      easing: 'easeOutExpo',
-      duration: 600
+        targets: '#all',
+        translateY: [25, 0],
+        opacity: [0, 1],
+        easing: 'easeOutExpo',
+        duration: 600
     })
 
     .add({
-      targets: '#ericZ',
-      translateY: [20,0],
-      opacity: [0,1],
-      easing: 'easeInExpo',
-      duration: 400,
-      delay: 300
+        targets: '#ericZ',
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeInExpo',
+        duration: 400,
+        delay: 300
     })
     // anime.stagger(100)
     .add({
-      targets: '#rightContact',
-      translateY: [20,0],
-      opacity: [0,1],
-      easing: 'easeInExpo',
-      duration: 400,
-      offset: '-=300'
+        targets: '#rightContact',
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeInExpo',
+        duration: 400,
+        offset: '-=300'
     })
     .add({
-      targets: '#rightWork',
-      translateY: [20,0],
-      opacity: [0,1],
-      easing: 'easeInExpo',
-      duration: 400,
-      offset: '-=300'
+        targets: '#rightWork',
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeInExpo',
+        duration: 400,
+        offset: '-=300'
     })
     .add({
-      targets: '#rightAbout',
-      translateY: [20,0],
-      opacity: [0,1],
-      easing: 'easeInExpo',
-      duration: 400,
-      offset: '-=300'
+        targets: '#rightAbout',
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeInExpo',
+        duration: 400,
+        offset: '-=300'
     })
 
-    
 
-    
+
+
     .add({
-      targets: '#workh2',
-      translateY: [20,0],
-      opacity: [0,1],
-      easing: 'easeInExpo',
-      duration: 400,
-      offset: '-=300'
+        targets: '#workh2',
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeInExpo',
+        duration: 400,
+        offset: '-=300'
     })
     .add({
-      targets: '.workPreview',
-      translateY: [20,0],
-      opacity: [0,1],
-      easing: 'easeInExpo',
-      duration: 400,
-      offset: '-=300'
+        targets: '.workPreview',
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeInExpo',
+        duration: 400,
+        offset: '-=300'
     })
     .add({
-      targets: '.columnLabel',
-      translateY: [20,0],
-      opacity: [0,1],
-      easing: 'easeInExpo',
-      duration: 400,
-      offset: '-=300'
+        targets: '.columnLabel',
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeInExpo',
+        duration: 400,
+        offset: '-=300'
     })
     .add({
-      targets: '.menu-btn__burger',
-      translateY: [20,0],
-      opacity: [0,1],
-      easing: 'easeOutExpo',
-      duration: 400,
-      offset: '-=600'
+        targets: '.menu-btn__burger',
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeOutExpo',
+        duration: 400,
+        offset: '-=600'
     })
-    
+
     .add({
-      targets: '#hero',
-      height: ["100vh", "60vh"],
-      easing: 'easeInOutQuart',
-      duration: 1000,
-      offset: '-=600',
-      // delay: 2000
+        targets: '#hero',
+        height: ["100vh", "60vh"],
+        easing: 'easeInOutQuart',
+        duration: 1000,
+        offset: '-=600',
+        // delay: 2000
     })
 
     // .add({
@@ -273,12 +273,12 @@ anime
     //   offset: '+=300'
     // })
     .add({
-      targets: '.pAbout',
-      translateY: [20,0],
-      opacity: [0,1],
-      easing: 'easeInExpo',
-      duration: 400,
-      delay: 0
+        targets: '.pAbout',
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeInExpo',
+        duration: 400,
+        delay: 0
     });
 
 TweenMax.to(".preload", 2.2, {

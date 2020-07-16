@@ -29,8 +29,8 @@
 
 <body>
     <!-- <script>
-		  window.scrollTo(0, 0);
-	</script> -->
+          window.scrollTo(0, 0);
+    </script> -->
     <!-- <div class="preload"> -->
     <!-- <marquee behavior="" direction="right" scrollamount="10">CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN </marquee>
         <marquee behavior="" direction="left" scrollamount="30">CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN CURTAIN </marquee>
@@ -83,19 +83,14 @@
                     <div class="wordSwapDiv" id="all">Researcher, Designer, & Engineer</div>
                 </div>
             </div>
-                
         </section>
-
-        
         <video class="demoreel" id="demoReelmp4" preload="auto" autoplay muted loop playsinline>
-              <source src="/imgs/demoreel.mp4" type="video/mp4">
+            <source src="/imgs/demoreel.mp4" type="video/mp4">
             Your browser does not support the video tag.
-            </video>
-
+        </video>
         <section id="containerWork">
-
+            <h2 id="workh2"></br>Selected Work</h2>
             <div class="rowWork">
-                <h2 id="workh2"></br>Selected Work</h2>
                 <div class="cell">
                     <a class="medium" href="https://medium.com/@theericzhang/ride-safe-ride-bart-cb4542c6daf0" target="_blank">
                         <div class="workPreview" id="workPreviewID">
@@ -117,20 +112,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="columnRight">
-                        <!-- Bruhuhuhuh -->
-                    </div>
+                    <!-- <div class="columnRight"> -->
+                    <!-- Bruhuhuhuh -->
+                    <!-- </div> -->
                 </div>
                 <div class="cell">
                     <a class="medium" href="https://medium.com/@theericzhang/take-action-a-mental-wellness-ecosystem-158b89a079dc" target="_blank">
-                        <div class="workPreviewAction" id="workPreviewID">
+                        <div class="workPreviewAction" id="workPreviewActionID">
                             <!-- <h4 class="caption">Restoring ridership in the Post-Pandemic Bay Area</h4> -->
                         </div>
                     </a>
                     <div class="columnLabel">
-                        <p class="fields">UX/UI, Branding, Content Strategy, Research</p>
+                        <p class="fields">UX/UI, UX Strategy, Branding, Content Strategy, Research</p>
                         <div class="menu-item">
-                            <div class="menu-item-wrapper" id="menu-item-wrapper-id">
+                            <div class="menu-item-wrapper" id="menu-item-wrapper-id2">
                                 <div class="menu-arrow">
                                     <ion-icon name="arrow-forward-sharp"></ion-icon>
                                 </div>
@@ -142,9 +137,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="columnRight">
-                        <!-- Bruhuhuhuh -->
-                    </div>
+                    <!-- <div class="columnRight"> -->
+                    <!-- Bruhuhuhuh -->
+                    <!-- </div> -->
                 </div>
             </div>
             <!-- <div id="retainable-rss-embed" 
@@ -165,40 +160,25 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
         <!-- Used for creating a carousel for the front page -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script>
-        if (document.URL.includes("index.html")) {
-
-            // alert("TWICE LOADED");
+        document.getElementById("menu-item-wrapper-id").style.left = "-45px";
+        document.getElementById("workPreviewID").onmouseover = function() {
+            // alert("chill bruh");
+            document.getElementById("menu-item-wrapper-id").style.left = 0;
         }
 
-        if (document.URL.includes("work.html")) {
-
-        }
-
+        document.getElementById("workPreviewID").onmouseout = function() {
             document.getElementById("menu-item-wrapper-id").style.left = "-45px";
-            document.getElementById("workPreviewID").onmouseover = function() {
-                // alert("chill bruh");
-                document.getElementById("menu-item-wrapper-id").style.left = 0;
-            }
+        }
 
-            document.getElementById("workPreviewID").onmouseout = function() {
-                document.getElementById("menu-item-wrapper-id").style.left = "-45px";
-            }
+        document.getElementById("menu-item-wrapper-id2").style.left = "-45px";
+        document.getElementById("workPreviewActionID").onmouseover = function() {
+            // alert("chill bruh");
+            document.getElementById("menu-item-wrapper-id2").style.left = 0;
+        }
 
-        var mySwiper = new Swiper('.swiper-container', {
-            // Optional parameters
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'fraction',
-            },
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
-            direction: 'horizontal',
-            loop: true,
-            updateOnWindowResize: true,
-
-        });
+        document.getElementById("workPreviewActionID").onmouseout = function() {
+            document.getElementById("menu-item-wrapper-id2").style.left = "-45px";
+        }
         // alert("Bruh");
         document.addEventListener('swup:animationInStart', function() {
             // setTimeout(function(){
@@ -261,8 +241,8 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
                 speedIn: 0.8,
                 speedOut: 0.6,
                 angle: 5 * Math.PI / 4,
-                image1: '/imgs/PreviewTakeAction.png',
-                image2: '/imgs/PreviewTakeAction2.png',
+                image1: '/imgs/TApic2.png',
+                image2: '/imgs/TApic.png',
                 displacementImage: '/imgs/facade.jpg'
             });
 
@@ -308,8 +288,8 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
                 speedIn: 0.8,
                 speedOut: 0.6,
                 angle: 5 * Math.PI / 4,
-                image1: '/imgs/PreviewTakeAction.png',
-                image2: '/imgs/PreviewTakeAction2.png',
+                image1: '/imgs/TApic2.png',
+                image2: '/imgs/TApic.png',
                 displacementImage: '/imgs/facade.jpg'
             });
 
@@ -317,6 +297,7 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
 
             if (document.URL.includes("work.html") || document.URL.includes("index.html")) {
                 // document.getElementById("menu-item-wrapper-id").style.left = "-45px";
+                document.getElementById("menu-item-wrapper-id").style.left = "-45px";
                 document.getElementById("workPreviewID").onmouseover = function() {
                     // alert("chill bruh");
                     document.getElementById("menu-item-wrapper-id").style.left = 0;
@@ -325,9 +306,19 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
                 document.getElementById("workPreviewID").onmouseout = function() {
                     document.getElementById("menu-item-wrapper-id").style.left = "-45px";
                 }
+
+                document.getElementById("menu-item-wrapper-id2").style.left = "-45px";
+                document.getElementById("workPreviewActionID").onmouseover = function() {
+                    // alert("chill bruh");
+                    document.getElementById("menu-item-wrapper-id2").style.left = 0;
+                }
+
+                document.getElementById("workPreviewActionID").onmouseout = function() {
+                    document.getElementById("menu-item-wrapper-id2").style.left = "-45px";
+                }
             }
 
-            window.onload = function(){
+            window.onload = function() {
 
             }
 
@@ -363,71 +354,71 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
                 .timeline({ loop: false })
 
                 .add({
-			      targets: '.hey',
-			      translateY: [100, 0],
-			      opacity: [0, 1],
-			      easing: 'easeOutExpo',
-			      duration: 1000,
-			      delay: 600
-			    })
-			    .add({
-			      targets: '.lz',
-			      translateY: [100, 0],
-			      opacity: [0, 1],
-			      easing: 'easeOutExpo',
-			      duration: 1000,
-			      offset: '-=900'
-			    })
-                .add({
-                  targets: '#all',
-                  translateY: [100, 0],
-                  opacity: [0, 1],
-                  easing: 'easeOutExpo',
-                  duration: 1000,
-                  offset: '-=900'
-                })
-			    .add({
-			      targets: '.portraitPreview2',
-			      translateY: [100, 0],
-			      // translateZ: [-80, 0],
-			      opacity: [0, 1],
-			      easing: 'easeOutExpo',
-			      duration: 1000,
-			      offset: '-=900',
-			      // delay: 600
-			    })
-                .add({
-                  targets: '#hero',
-                  height: ["100vh", "60vh"],
-                  easing: 'easeInOutQuart',
-                  duration: 1000,
-                  offset: '-=900',
-                  delay: 400
-                })
-                .add({
-                    targets: '#workh2',
-                    translateY: [20, 0],
+                    targets: '.hey',
+                    translateY: [100, 0],
                     opacity: [0, 1],
-                    easing: 'easeInExpo',
-                    duration: 400,
-                    offset: '-=300'
+                    easing: 'easeOutExpo',
+                    duration: 1000,
+                    delay: 600
                 })
                 .add({
-                    targets: '.workPreview',
-                    translateY: [20, 0],
+                    targets: '.lz',
+                    translateY: [100, 0],
                     opacity: [0, 1],
-                    easing: 'easeInExpo',
-                    duration: 400,
-                    offset: '-=300'
+                    easing: 'easeOutExpo',
+                    duration: 1000,
+                    offset: '-=900'
                 })
                 .add({
-                    targets: '.columnLabel',
-                    translateY: [20, 0],
+                    targets: '#all',
+                    translateY: [100, 0],
                     opacity: [0, 1],
-                    easing: 'easeInExpo',
-                    duration: 400,
-                    offset: '-=300'
+                    easing: 'easeOutExpo',
+                    duration: 1000,
+                    offset: '-=900'
                 })
+                .add({
+                    targets: '.portraitPreview2',
+                    translateY: [100, 0],
+                    // translateZ: [-80, 0],
+                    opacity: [0, 1],
+                    easing: 'easeOutExpo',
+                    duration: 1000,
+                    offset: '-=900',
+                    // delay: 600
+                })
+                .add({
+                    targets: '#hero',
+                    height: ["100vh", "60vh"],
+                    easing: 'easeInOutQuart',
+                    duration: 1000,
+                    offset: '-=900',
+                    delay: 400
+                })
+                // .add({
+                //     targets: '#workh2',
+                //     translateY: [20, 0],
+                //     opacity: [0, 1],
+                //     easing: 'easeInExpo',
+                //     duration: 400,
+                //     offset: '-=300'
+                // })
+                // .add({
+                //     targets: '.workPreview',
+                //     translateY: [20, 0],
+                //     opacity: [0, 1],
+                //     easing: 'easeInExpo',
+                //     duration: 400,
+                //     offset: '-=300'
+                // })
+                // .add({
+                //     targets: '.columnLabel',
+                //     translateY: [20, 0],
+                //     opacity: [0, 1],
+                //     easing: 'easeInExpo',
+                //     duration: 400,
+                //     offset: '-=300'
+                // })
                 .add({});
 
             anime
@@ -512,7 +503,7 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
                 .add({});
 
 
-        document.getElementById("demoReelmp4").play();
+            // document.getElementById("demoReelmp4").play();
         });
         </script>
     </main>
@@ -526,8 +517,7 @@ The Big Oxmox advised her not to do so, because there were thousands of bad Comm
 
     const swup = new Swup({
         animateHistoryBrowsing: true,
-        linkSelector:
-            'a[href^="' +
+        linkSelector: 'a[href^="' +
             window.location.origin +
             '"]:not([data-no-swup]), a[href^="/"]:not([data-no-swup]):not([target="_blank"])',
         plugins: [
