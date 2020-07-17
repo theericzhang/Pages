@@ -732,9 +732,9 @@ h1 {
 
 .fields {
     max-width: 600px;
-    font-family: 'ApercuMonoPro-Medium';
+    font-family: 'Apercu Mono Pro';
     font-size: 14px;
-    font-weight: normal;
+    font-weight: 300;
     color: #afb0ad;
     /*line-height: 0;*/
     margin-top: 20px;
