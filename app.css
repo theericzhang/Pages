@@ -655,6 +655,8 @@ hr.solid {
     }
 
 
+
+
 }
 
 h1 {
@@ -733,11 +735,11 @@ h1 {
     font-family: 'ApercuMonoPro-Medium';
     font-size: 14px;
     font-weight: normal;
-    color: gray;
-    line-height: 0;
-    margin-top: 35px;
-    margin-left: 2px;
-    margin-bottom: 10px;
+    color: #afb0ad;
+    /*line-height: 0;*/
+    margin-top: 20px;
+    /*margin-left: 2px;*/
+    margin-bottom: 5px;
 }
 
 .columnLabel {
@@ -860,7 +862,7 @@ p.pAbout {
     height: auto;
     width: auto;
     /*padding-top: 82px;*/
-    padding: 0px 16px;
+    padding: 0px 15px;
     background-color: black;
 }
 
@@ -907,102 +909,7 @@ p.pAbout {
 /* Clear floats after the columns */
 
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        height: 100%;
-        overflow: visible;
-        /*display: block;*/
-    }
 
-    .columnRight {
-        width: 100%;
-        /*display: flex;*/
-        height: 100%;
-        overflow: visible;
-    }
-
-    p.pAbout {
-        margin-left: 0px;
-        /*color: blue;*/
-    }
-
-    h1 {
-        font-size: 100px;
-    }
-
-    #containerAbout {
-        display: block;
-    }
-
-    #containerWork {
-        display: block;
-    }
-
-    .row {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .rowWork {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .menu-btn {
-        display: flex;
-    }
-
-    .overlay-content {
-        position: relative;
-        top: 5%;
-        width: 100%;
-        text-align: left;
-        margin-top: 55px;
-        margin-bottom: 55px;
-        margin-left: 15px;
-        margin-right: 20px;
-        z-index: 3;
-        /*overflow-x: hidden;*/
-    }
-
-    .overlay {
-        height: 0%;
-        width: 100%;
-        position: fixed;
-        z-index: 2;
-        left: 0;
-        top: 0;
-        /*background-color: rgb(0,0,0);*/
-        /*background-color: rgba(0,0,0,0.9);*/
-        background-color: #edeee9;
-        overflow-x: hidden;
-        transition: 0.4s;
-    }
-
-    #rightNav {
-        display: none;
-    }
-
-    .swiper-container {
-        height: 400px;
-    }
-
-    .portraitPreview {
-        max-width: 100%;
-        max-height: 100%;
-
-    }
-
-
-
-
-    /*img{
-        max-width: 100%;
-        max-height: 100%;
-      }*/
-}
 
 img.portrait {
     width: 100%;
@@ -1296,8 +1203,7 @@ ion-icon {
     padding-bottom: 0px;
     /*padding-left: 16px;*/
     /*padding-right: 16px;*/
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0px;
     /*font-family: 'neue-haas-unica';*/
     font-size: 40px;
     /*letter-spacing: 0px;*/
@@ -1345,6 +1251,7 @@ ion-icon {
     height: 45vw;
     /*top: 50%;
     left: 50%;*/
+    float: left;
     align-items: left;
     justify-content: left;
     position: relative;
@@ -1401,6 +1308,250 @@ ion-icon {
     width: 100%;
     height: 100%;
 }*/
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+    .wordSwapDiv {
+        font-size: 55px;
+    }
+
+    .wordSwap {
+        font-size: 55px;
+    }
+
+    #hero {
+        height: 60vh;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .wordSwapDiv {
+        font-size: 45px;
+    }
+
+    .wordSwap {
+        font-size: 45px;
+    }
+
+    #hero {
+        height: 60vh;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .workPreview {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .workPreviewAction {
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .wordSwapDiv {
+        padding: 15px 15px;
+    }
+
+    .wordSwap {
+        padding: 15px 15px;
+    }
+
+    #navinner {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #hero {
+        height: 60vh;
+    }
+
+    h2 {
+        margin: 0px 15px;
+    }
+
+    .rowWork {
+        padding: 0px 15px;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+        /*display: block;*/
+    }
+
+    .columnRight {
+        width: 100%;
+        /*display: flex;*/
+        height: 100%;
+        overflow: visible;
+    }
+
+    p.pAbout {
+        margin-left: 0px;
+        /*color: blue;*/
+    }
+
+    h1 {
+        font-size: 100px;
+    }
+
+    #containerAbout {
+        display: block;
+    }
+
+    #containerWork {
+        display: block;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rowWork {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 5%;
+        width: 100%;
+        text-align: left;
+        margin-top: 55px;
+        margin-bottom: 55px;
+        margin-left: 15px;
+        margin-right: 20px;
+        z-index: 3;
+        /*overflow-x: hidden;*/
+    }
+
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        /*background-color: rgb(0,0,0);*/
+        /*background-color: rgba(0,0,0,0.9);*/
+        background-color: #edeee9;
+        overflow-x: hidden;
+        transition: 0.4s;
+    }
+
+    #rightNav {
+        display: none;
+    }
+
+    .swiper-container {
+        height: 400px;
+    }
+
+    .portraitPreview {
+        max-width: 91vw;
+        max-height: 91vw;
+
+    }
+
+    .wordSwapDiv {
+        font-size: 27px;
+    }
+
+    .wordSwap {
+        font-size: 27px;
+    }
+
+    #all {
+        line-height: 40px;
+    }
+
+    #hero {
+        height: 30vh;
+    }
+
+    .workPreview {
+        width: 92vw;
+        height: 92vw;
+    }
+
+    .workPreviewAction {
+        width: 92vw;
+        height: 92vw;
+    }
+
+    .fields {
+        margin-top: 28px;
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    #abouth2 {
+        font-size: 25px;
+        padding-top: 20px;
+    }
+
+    .cell {
+        margin-bottom: 40px;
+    }
+
+    #workDivider {
+        width: 45px;
+        text-align: left;
+        margin-top: 0px;
+        margin-left: 15px;
+        margin-bottom: 30px;
+        border: 1px solid #000;
+    }
+
+    /*.links {
+        float: bottom;
+    }*/
+
+
+
+
+
+    /*img{
+        max-width: 100%;
+        max-height: 100%;
+      }*/
+}
+
 
 .caption {
     position: absolute;

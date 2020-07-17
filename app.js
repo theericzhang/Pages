@@ -28,7 +28,281 @@ textWrapper.innerHTML = textWrapper.textContent.replace(
     "<span class='letter'>$&</span>"
 );
 
-anime
+var windowWatch = window.matchMedia("(max-width: 600px)");
+if (windowWatch.matches){
+  anime
+    .timeline({ loop: false })
+    .add({
+        targets: ".intro-title .letter",
+        // translateX: [140, 0],
+        translateY: [200, 0],
+        translateZ: 0,
+        scale: 1,
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 1400,
+        delay: function(el, i) {
+            return 200 + 50 * i;
+        }
+    })
+    .add({
+        targets: ".intro-title .letter",
+        // translateX: [0, -140],
+        translateY: [0, -200],
+        // translateZ: 0,
+        scale: 1,
+        opacity: [1, 0],
+        easing: "easeInExpo",
+        duration: 1200,
+        delay: function(el, i) {
+            return 50 * i;
+        }
+    })
+
+    // .add({
+    //   targets: ".preload",
+    //   scaleY: "0.50",
+    //   scaleX: "0.7",
+
+    //   // marginLeft: "15vw",
+    //   // marginRight: "15vw",
+    //   // marginTop: "25vh",
+    //   // marginBottom: "25vh",
+    //   // margin: auto,
+    //   // zIndex: "3",
+    //   easing: 'easeInOutQuart',
+    //   duration: 1700,
+    // })
+    // .add({
+    //   targets: ".lz",
+    //   scaleY: "2",
+    //   scaleX: "1.4",
+    //   duration: 1,
+    // })
+
+    .add({
+        targets: '.hey',
+        translateY: [100, 0],
+        opacity: [0, 1],
+        easing: 'easeOutExpo',
+        duration: 1000,
+        delay: 600
+    })
+    .add({
+        targets: ".lz",
+        translateY: [100, 0],
+        opacity: [0, 1],
+        easing: 'easeOutExpo',
+        duration: 1000,
+        offset: '-=900'
+    })
+    .add({
+        targets: '#ixd',
+        translateY: [100, 0],
+        opacity: [0, 1],
+        easing: 'easeOutExpo',
+        duration: 1000,
+        offset: '-=900'
+    })
+    .add({
+        targets: '.portraitPreview2',
+        translateY: [100, 0],
+        perspective: [-100, 0],
+        opacity: [0, 1],
+        // scale: [1.1, 1],
+        easing: 'easeInOutQuart',
+        duration: 1000,
+        offset: '-=900',
+        // delay: 600
+    })
+    .add({
+        targets: '#ixd',
+        translateY: [0, -25],
+        opacity: [1, 0],
+        easing: 'easeInOutQuart',
+        duration: 600,
+        // offset: '-=900',
+        delay: 100
+    })
+    .add({
+        targets: '#res',
+        translateY: [25, 0],
+        opacity: [0, 1],
+        easing: 'easeOutExpo',
+        duration: 600,
+        // delay: 500
+        // offset: '-=900'
+    })
+    .add({
+        targets: '#res',
+        translateY: [0, -25],
+        opacity: [1, 0],
+        easing: 'easeOutExpo',
+        duration: 600,
+        // offset: '-=900',
+        delay: 100
+    })
+    .add({
+        targets: '#uxd',
+        translateY: [25, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutQuart',
+        duration: 600,
+        // delay: 500
+        // offset: '-=900'
+    })
+    .add({
+        targets: '#uxd',
+        translateY: [0, -25],
+        opacity: [1, 0],
+        easing: 'easeInOutQuart',
+        duration: 600,
+        // offset: '-=900',
+        delay: 100
+    })
+    .add({
+        targets: '#eng',
+        translateY: [25, 0],
+        opacity: [0, 1],
+        easing: 'easeOutExpo',
+        duration: 600,
+        // delay: 500
+        // offset: '-=900'
+    })
+    .add({
+        targets: '#eng',
+        translateY: [0, -25],
+        opacity: [1, 0],
+        easing: 'easeOutExpo',
+        duration: 600,
+        // offset: '-=900',
+        delay: 100
+    })
+    //display all
+    .add({
+        targets: '#all',
+        translateY: [25, 0],
+        opacity: [0, 1],
+        easing: 'easeOutExpo',
+        duration: 600
+    })
+
+    .add({
+        targets: '#ericZ',
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeInExpo',
+        duration: 400,
+        delay: 300
+    })
+    // anime.stagger(100)
+    .add({
+        targets: '#rightContact',
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeInExpo',
+        duration: 400,
+        offset: '-=300'
+    })
+    .add({
+        targets: '#rightWork',
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeInExpo',
+        duration: 400,
+        offset: '-=300'
+    })
+    .add({
+        targets: '#rightAbout',
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeInExpo',
+        duration: 400,
+        offset: '-=300'
+    })
+
+
+
+
+    .add({
+        targets: '#workh2',
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeInExpo',
+        duration: 400,
+        offset: '-=300'
+    })
+    .add({
+        targets: '.workPreview',
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeInExpo',
+        duration: 400,
+        offset: '-=300'
+    })
+    .add({
+        targets: '.columnLabel',
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeInExpo',
+        duration: 400,
+        offset: '-=300'
+    })
+    .add({
+        targets: '.menu-btn__burger',
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeOutExpo',
+        duration: 400,
+        offset: '-=600'
+    })
+
+    .add({
+        targets: '#hero',
+        height: ["100vh", "30vh"],
+        easing: 'easeInOutQuart',
+        duration: 1000,
+        offset: '-=600',
+        // delay: 2000
+    })
+
+    // .add({
+    //   targets: '.preview',
+    //   translateY: [20,0],
+    //   opacity: [0,1],
+    //   easing: 'easeOutExpo',
+    //   duration: 400,
+    //   offset: '+=300'
+    // })
+    .add({
+        targets: '.pAbout',
+        translateY: [20, 0],
+        opacity: [0, 1],
+        easing: 'easeInExpo',
+        duration: 400,
+        delay: 0
+    });
+
+TweenMax.to(".preload", 2.2, {
+    delay: 3,
+    // top: "-100%",
+    // background: "#000",
+    opacity: "0",
+    // scaleY: "0.50",
+    // scaleX: "0.7",
+
+    // zIndex: "3",
+    ease: Expo.easeInOut,
+});
+
+TweenMax.to(".preload", 0.1, {
+    delay: 5,
+    top: "-100%",
+});
+}
+
+else{
+  anime
     .timeline({ loop: false })
     .add({
         targets: ".intro-title .letter",
@@ -297,6 +571,9 @@ TweenMax.to(".preload", 0.1, {
     delay: 5,
     top: "-100%",
 });
+}
+
+
 
 
 
